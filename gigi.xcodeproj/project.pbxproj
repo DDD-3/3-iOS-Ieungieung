@@ -1,0 +1,418 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		198F95DF2374415A00CC442D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 198F95DE2374415A00CC442D /* AppDelegate.swift */; };
+		198F95E12374415A00CC442D /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 198F95E02374415A00CC442D /* SceneDelegate.swift */; };
+		198F95E32374415A00CC442D /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 198F95E22374415A00CC442D /* ContentView.swift */; };
+		198F95E52374415D00CC442D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 198F95E42374415D00CC442D /* Assets.xcassets */; };
+		198F95E82374415D00CC442D /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 198F95E72374415D00CC442D /* Preview Assets.xcassets */; };
+		198F95EB2374415D00CC442D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 198F95E92374415D00CC442D /* LaunchScreen.storyboard */; };
+		AE3B62E381A6142F5C7A0DCD /* Pods_gigi.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C4B46B37D6FDAEA701D46DB5 /* Pods_gigi.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		198F95DB2374415A00CC442D /* gigi.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = gigi.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		198F95DE2374415A00CC442D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		198F95E02374415A00CC442D /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		198F95E22374415A00CC442D /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		198F95E42374415D00CC442D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		198F95E72374415D00CC442D /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		198F95EA2374415D00CC442D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		198F95EC2374415D00CC442D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4DD3A46DBD3DA982C5610FE9 /* Pods-gigi.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-gigi.release.xcconfig"; path = "Target Support Files/Pods-gigi/Pods-gigi.release.xcconfig"; sourceTree = "<group>"; };
+		AA83D2D42789F894D7D78830 /* Pods-gigi.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-gigi.debug.xcconfig"; path = "Target Support Files/Pods-gigi/Pods-gigi.debug.xcconfig"; sourceTree = "<group>"; };
+		C4B46B37D6FDAEA701D46DB5 /* Pods_gigi.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_gigi.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		198F95D82374415A00CC442D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AE3B62E381A6142F5C7A0DCD /* Pods_gigi.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		198F95D22374415A00CC442D = {
+			isa = PBXGroup;
+			children = (
+				198F95DD2374415A00CC442D /* gigi */,
+				198F95DC2374415A00CC442D /* Products */,
+				A86AD22D9EEE8E02E9987922 /* Pods */,
+				751D664EF8DFCAC96AED8CE4 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		198F95DC2374415A00CC442D /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				198F95DB2374415A00CC442D /* gigi.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		198F95DD2374415A00CC442D /* gigi */ = {
+			isa = PBXGroup;
+			children = (
+				198F95DE2374415A00CC442D /* AppDelegate.swift */,
+				198F95E02374415A00CC442D /* SceneDelegate.swift */,
+				198F95E22374415A00CC442D /* ContentView.swift */,
+				198F95E42374415D00CC442D /* Assets.xcassets */,
+				198F95E92374415D00CC442D /* LaunchScreen.storyboard */,
+				198F95EC2374415D00CC442D /* Info.plist */,
+				198F95E62374415D00CC442D /* Preview Content */,
+			);
+			path = gigi;
+			sourceTree = "<group>";
+		};
+		198F95E62374415D00CC442D /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				198F95E72374415D00CC442D /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		751D664EF8DFCAC96AED8CE4 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				C4B46B37D6FDAEA701D46DB5 /* Pods_gigi.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		A86AD22D9EEE8E02E9987922 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				AA83D2D42789F894D7D78830 /* Pods-gigi.debug.xcconfig */,
+				4DD3A46DBD3DA982C5610FE9 /* Pods-gigi.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		198F95DA2374415A00CC442D /* gigi */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 198F95EF2374415D00CC442D /* Build configuration list for PBXNativeTarget "gigi" */;
+			buildPhases = (
+				95648E82449C7547D75BB287 /* [CP] Check Pods Manifest.lock */,
+				198F95D72374415A00CC442D /* Sources */,
+				198F95D82374415A00CC442D /* Frameworks */,
+				198F95D92374415A00CC442D /* Resources */,
+				A5EFD57292D71BA3365DB26D /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = gigi;
+			productName = gigi;
+			productReference = 198F95DB2374415A00CC442D /* gigi.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		198F95D32374415A00CC442D /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1120;
+				LastUpgradeCheck = 1120;
+				ORGANIZATIONNAME = ieungieung;
+				TargetAttributes = {
+					198F95DA2374415A00CC442D = {
+						CreatedOnToolsVersion = 11.2;
+					};
+				};
+			};
+			buildConfigurationList = 198F95D62374415A00CC442D /* Build configuration list for PBXProject "gigi" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 198F95D22374415A00CC442D;
+			productRefGroup = 198F95DC2374415A00CC442D /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				198F95DA2374415A00CC442D /* gigi */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		198F95D92374415A00CC442D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				198F95EB2374415D00CC442D /* LaunchScreen.storyboard in Resources */,
+				198F95E82374415D00CC442D /* Preview Assets.xcassets in Resources */,
+				198F95E52374415D00CC442D /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		95648E82449C7547D75BB287 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-gigi-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		A5EFD57292D71BA3365DB26D /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-gigi/Pods-gigi-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-gigi/Pods-gigi-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-gigi/Pods-gigi-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		198F95D72374415A00CC442D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				198F95DF2374415A00CC442D /* AppDelegate.swift in Sources */,
+				198F95E12374415A00CC442D /* SceneDelegate.swift in Sources */,
+				198F95E32374415A00CC442D /* ContentView.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		198F95E92374415D00CC442D /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				198F95EA2374415D00CC442D /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		198F95ED2374415D00CC442D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		198F95EE2374415D00CC442D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		198F95F02374415D00CC442D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = AA83D2D42789F894D7D78830 /* Pods-gigi.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_ASSET_PATHS = "\"gigi/Preview Content\"";
+				DEVELOPMENT_TEAM = H79MF628K3;
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = gigi/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.ddd.gigi;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		198F95F12374415D00CC442D /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4DD3A46DBD3DA982C5610FE9 /* Pods-gigi.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_ASSET_PATHS = "\"gigi/Preview Content\"";
+				DEVELOPMENT_TEAM = H79MF628K3;
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = gigi/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.ddd.gigi;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		198F95D62374415A00CC442D /* Build configuration list for PBXProject "gigi" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				198F95ED2374415D00CC442D /* Debug */,
+				198F95EE2374415D00CC442D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		198F95EF2374415D00CC442D /* Build configuration list for PBXNativeTarget "gigi" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				198F95F02374415D00CC442D /* Debug */,
+				198F95F12374415D00CC442D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 198F95D32374415A00CC442D /* Project object */;
+}
