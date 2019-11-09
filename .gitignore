@@ -124,8 +124,4 @@ iOSInjectionProject/
 ### Xcode Patch ###
 **/xcshareddata/WorkspaceSettings.xcsettings
 
-KakaoMessageTemplate.framework
-KakaoCommon.framework
-KakaoLink.framework
-
 # End of https://www.gitignore.io/api/git,swift,xcode,cocoapods
