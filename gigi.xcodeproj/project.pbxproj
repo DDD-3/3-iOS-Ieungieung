@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 51;
+	objectVersion = 50;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -13,9 +13,6 @@
 		198F95E52374415D00CC442D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 198F95E42374415D00CC442D /* Assets.xcassets */; };
 		198F95E82374415D00CC442D /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 198F95E72374415D00CC442D /* Preview Assets.xcassets */; };
 		198F95EB2374415D00CC442D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 198F95E92374415D00CC442D /* LaunchScreen.storyboard */; };
-		198F95F4237468A700CC442D /* KakaoLink.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 198F95F2237468A700CC442D /* KakaoLink.framework */; };
-		198F95F5237468A700CC442D /* KakaoCommon.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 198F95F3237468A700CC442D /* KakaoCommon.framework */; };
-		198F95F723746B4900CC442D /* KakaoMessageTemplate.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 198F95F623746B4900CC442D /* KakaoMessageTemplate.framework */; };
 		AE3B62E381A6142F5C7A0DCD /* Pods_gigi.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C4B46B37D6FDAEA701D46DB5 /* Pods_gigi.framework */; };
 /* End PBXBuildFile section */
 
@@ -28,9 +25,6 @@
 		198F95E72374415D00CC442D /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		198F95EA2374415D00CC442D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		198F95EC2374415D00CC442D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		198F95F2237468A700CC442D /* KakaoLink.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = KakaoLink.framework; sourceTree = "<group>"; };
-		198F95F3237468A700CC442D /* KakaoCommon.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = KakaoCommon.framework; sourceTree = "<group>"; };
-		198F95F623746B4900CC442D /* KakaoMessageTemplate.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = KakaoMessageTemplate.framework; sourceTree = "<group>"; };
 		4DD3A46DBD3DA982C5610FE9 /* Pods-gigi.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-gigi.release.xcconfig"; path = "Target Support Files/Pods-gigi/Pods-gigi.release.xcconfig"; sourceTree = "<group>"; };
 		AA83D2D42789F894D7D78830 /* Pods-gigi.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-gigi.debug.xcconfig"; path = "Target Support Files/Pods-gigi/Pods-gigi.debug.xcconfig"; sourceTree = "<group>"; };
 		C4B46B37D6FDAEA701D46DB5 /* Pods_gigi.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_gigi.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -41,9 +35,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				198F95F4237468A700CC442D /* KakaoLink.framework in Frameworks */,
-				198F95F5237468A700CC442D /* KakaoCommon.framework in Frameworks */,
-				198F95F723746B4900CC442D /* KakaoMessageTemplate.framework in Frameworks */,
 				AE3B62E381A6142F5C7A0DCD /* Pods_gigi.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -94,9 +85,6 @@
 		751D664EF8DFCAC96AED8CE4 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				198F95F623746B4900CC442D /* KakaoMessageTemplate.framework */,
-				198F95F3237468A700CC442D /* KakaoCommon.framework */,
-				198F95F2237468A700CC442D /* KakaoLink.framework */,
 				C4B46B37D6FDAEA701D46DB5 /* Pods_gigi.framework */,
 			);
 			name = Frameworks;
@@ -108,6 +96,7 @@
 				AA83D2D42789F894D7D78830 /* Pods-gigi.debug.xcconfig */,
 				4DD3A46DBD3DA982C5610FE9 /* Pods-gigi.release.xcconfig */,
 			);
+			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -369,10 +358,6 @@
 				DEVELOPMENT_ASSET_PATHS = "\"gigi/Preview Content\"";
 				DEVELOPMENT_TEAM = H79MF628K3;
 				ENABLE_PREVIEWS = YES;
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(inherited)",
-					"$(PROJECT_DIR)",
-				);
 				INFOPLIST_FILE = gigi/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -394,10 +379,6 @@
 				DEVELOPMENT_ASSET_PATHS = "\"gigi/Preview Content\"";
 				DEVELOPMENT_TEAM = H79MF628K3;
 				ENABLE_PREVIEWS = YES;
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(inherited)",
-					"$(PROJECT_DIR)",
-				);
 				INFOPLIST_FILE = gigi/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",

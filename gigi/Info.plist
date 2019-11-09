@@ -16,17 +16,6 @@
 	<string>$(PRODUCT_BUNDLE_PACKAGE_TYPE)</string>
 	<key>CFBundleShortVersionString</key>
 	<string>1.0</string>
-	<key>CFBundleURLTypes</key>
-	<array>
-		<dict>
-			<key>CFBundleTypeRole</key>
-			<string>Editor</string>
-			<key>CFBundleURLSchemes</key>
-			<array>
-				<string>kakaofcd209126d3f0638a9ad1d8188c49488</string>
-			</array>
-		</dict>
-	</array>
 	<key>CFBundleVersion</key>
 	<string>1</string>
 	<key>LSRequiresIPhoneOS</key>
@@ -67,13 +56,5 @@
 		<string>UIInterfaceOrientationLandscapeLeft</string>
 		<string>UIInterfaceOrientationLandscapeRight</string>
 	</array>
-	<key>KAKAO_APP_KEY</key>
-	<string>fcd209126d3f0638a9ad1d8188c49488</string>
-  <key>LSApplicationQueriesSchemes</key>
-  <array>
-    <string>kakaofcd209126d3f0638a9ad1d8188c49488</string>
-    <string>kakaolink</string>
-    <string>kakaotalk-5.9.7</string>
-  </array>
 </dict>
 </plist>
