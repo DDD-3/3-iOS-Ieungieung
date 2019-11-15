@@ -127,5 +127,6 @@ iOSInjectionProject/
 KakaoCommon.framework
 KakaoLink.framework
 KakaoMessageTemplate.framework
+DaumMap.embeddedframework
 
 # End of https://www.gitignore.io/api/git,swift,xcode,cocoapods
