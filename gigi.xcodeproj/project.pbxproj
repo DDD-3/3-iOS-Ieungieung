@@ -13,6 +13,7 @@
 		198F95E52374415D00CC442D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 198F95E42374415D00CC442D /* Assets.xcassets */; };
 		198F95E82374415D00CC442D /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 198F95E72374415D00CC442D /* Preview Assets.xcassets */; };
 		198F95EB2374415D00CC442D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 198F95E92374415D00CC442D /* LaunchScreen.storyboard */; };
+		198F961C2377B4E600CC442D /* Log.swift in Sources */ = {isa = PBXBuildFile; fileRef = 198F961B2377B4E600CC442D /* Log.swift */; };
 		198F960C23770B7F00CC442D /* KakaoMessageTemplate.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 198F960923770B7F00CC442D /* KakaoMessageTemplate.framework */; };
 		198F960D23770B7F00CC442D /* KakaoLink.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 198F960A23770B7F00CC442D /* KakaoLink.framework */; };
 		198F960E23770B7F00CC442D /* KakaoCommon.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 198F960B23770B7F00CC442D /* KakaoCommon.framework */; };
@@ -28,6 +29,7 @@
 		198F95E72374415D00CC442D /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		198F95EA2374415D00CC442D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		198F95EC2374415D00CC442D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		198F961B2377B4E600CC442D /* Log.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Log.swift; sourceTree = "<group>"; };
 		198F960923770B7F00CC442D /* KakaoMessageTemplate.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = KakaoMessageTemplate.framework; path = "../../../Downloads/kakao-ios-sdk-1/KakaoMessageTemplate.framework"; sourceTree = "<group>"; };
 		198F960A23770B7F00CC442D /* KakaoLink.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = KakaoLink.framework; path = "../../../Downloads/kakao-ios-sdk-1/KakaoLink.framework"; sourceTree = "<group>"; };
 		198F960B23770B7F00CC442D /* KakaoCommon.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = KakaoCommon.framework; path = "../../../Downloads/kakao-ios-sdk-1/KakaoCommon.framework"; sourceTree = "<group>"; };
@@ -72,6 +74,14 @@
 		198F95DD2374415A00CC442D /* gigi */ = {
 			isa = PBXGroup;
 			children = (
+				198F961A2377B4DD00CC442D /* Common */,
+				198F95DE2374415A00CC442D /* AppDelegate.swift */,
+				198F95E02374415A00CC442D /* SceneDelegate.swift */,
+				198F95E22374415A00CC442D /* ContentView.swift */,
+				198F95E42374415D00CC442D /* Assets.xcassets */,
+				198F95E92374415D00CC442D /* LaunchScreen.storyboard */,
+				198F95EC2374415D00CC442D /* Info.plist */,
+				198F95E62374415D00CC442D /* Preview Content */,
 				198F95FA23767C1600CC442D /* Supports */,
 				198F95F923767C1200CC442D /* Sources */,
 				198F95F823767C0D00CC442D /* Resources */,
@@ -87,6 +97,12 @@
 			path = "Preview Content";
 			sourceTree = "<group>";
 		};
+		198F961A2377B4DD00CC442D /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				198F961B2377B4E600CC442D /* Log.swift */,
+			);
+			path = Common;
 		198F95F823767C0D00CC442D /* Resources */ = {
 			isa = PBXGroup;
 			children = (
@@ -260,6 +276,7 @@
 			files = (
 				198F95DF2374415A00CC442D /* AppDelegate.swift in Sources */,
 				198F95E12374415A00CC442D /* SceneDelegate.swift in Sources */,
+				198F961C2377B4E600CC442D /* Log.swift in Sources */,
 				198F95E32374415A00CC442D /* ContentView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
