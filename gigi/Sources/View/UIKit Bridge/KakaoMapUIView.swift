@@ -6,4 +6,16 @@
 //  Copyright © 2019 ieungieung. All rights reserved.
 //
 
-import Foundation
+import SwiftUI
+import UIKit
+
+final class KakaoMapUIView: MTMapView {
+
+  override init(frame: CGRect) {
+    super.init(frame: frame)
+  }
+
+  required init?(coder: NSCoder) {
+    super.init(coder: coder)
+  }
+}
