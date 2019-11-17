@@ -2,6 +2,8 @@
 
 **기기**
 
+> 여기닷!
+
 ## 기술
 
 - iOS 13
@@ -28,7 +30,7 @@
 2. 프로젝트의 `Frameworks` 디렉토리에 `KakaoMessageTemplate.framework`, `KakaoCommon.framework`, `KakaoLink.framework` 프레임워크를 추가합니다.
 3. [다운로드 링크](http://apis.map.kakao.com/download/ios/sdk/IOS_DaumMap_SDK_1.3.1.zip)에서 kakao 지도 iOS SDK를 다운로드합니다.
 4. 프로젝트의 `Frameworks` 디렉토리에 `DaumMap.embeddedframework` 디렉토리를 추가합니다.
-5. 프로젝트의 `Targets -> Build Phases -> Link Binary With Libraries` 항목에 다음의 프레임워크를 추가하빈다.
+5. 프로젝트의 `Targets -> Build Phases -> Link Binary With Libraries` 항목에 다음의 프레임워크를 추가합니다.
    - `OpenGLES.framework`
    - `SystemConfigure.framework`
    - `CoreLocation.framework`
@@ -65,3 +67,5 @@
 ```
 
 > `develop` 브랜치에서 위의 개발 환경을 구성해 놓고, 각 기능 개발 시 브랜치를 새로 만들어서 작업하는 것을 권장합니다.
+
+> kakao가 제공하는 프레임워크와 Info.plist 파일은 git이 추적하지 않습니다.

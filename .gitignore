@@ -128,5 +128,6 @@ KakaoCommon.framework
 KakaoLink.framework
 KakaoMessageTemplate.framework
 DaumMap.embeddedframework
+Info.plist
 
 # End of https://www.gitignore.io/api/git,swift,xcode,cocoapods
