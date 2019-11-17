@@ -30,7 +30,6 @@
 		19A964AF2381243000AAC7D3 /* copyright.png in Resources */ = {isa = PBXBuildFile; fileRef = 19A964892381242F00AAC7D3 /* copyright.png */; };
 		19A964B02381243000AAC7D3 /* th_line.png in Resources */ = {isa = PBXBuildFile; fileRef = 19A9648A2381242F00AAC7D3 /* th_line.png */; };
 		19A964B12381243000AAC7D3 /* map_pin_red@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 19A9648B2381242F00AAC7D3 /* map_pin_red@3x.png */; };
-		19A964B22381243000AAC7D3 /* DaumMap in Frameworks */ = {isa = PBXBuildFile; fileRef = 19A9648C2381242F00AAC7D3 /* DaumMap */; };
 		19A964B32381243000AAC7D3 /* daum_copyright.png in Resources */ = {isa = PBXBuildFile; fileRef = 19A9648D2381242F00AAC7D3 /* daum_copyright.png */; };
 		19A964B42381243000AAC7D3 /* map_pin@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 19A9648E2381242F00AAC7D3 /* map_pin@3x.png */; };
 		19A964B52381243000AAC7D3 /* map_present_tracking.png in Resources */ = {isa = PBXBuildFile; fileRef = 19A9648F2381242F00AAC7D3 /* map_present_tracking.png */; };
@@ -55,6 +54,8 @@
 		19A964CD2381245E00AAC7D3 /* libc++.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 19A964CC2381245E00AAC7D3 /* libc++.tbd */; };
 		19A964CF2381246200AAC7D3 /* libxml2.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 19A964CE2381246200AAC7D3 /* libxml2.tbd */; };
 		19A964D12381246800AAC7D3 /* libsqlite3.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 19A964D02381246800AAC7D3 /* libsqlite3.tbd */; };
+		19A964D32381250200AAC7D3 /* KakaoMapView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19A964D22381250200AAC7D3 /* KakaoMapView.swift */; };
+		19A964D62381253D00AAC7D3 /* KakaoMapUIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19A964D52381253D00AAC7D3 /* KakaoMapUIView.swift */; };
 		749CA54119529C4ED25615781282B52E /* Pods_gigi.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9F40FDE06DB803CBF6F0561C7EB7F2D6 /* Pods_gigi.framework */; };
 /* End PBXBuildFile section */
 
@@ -116,6 +117,9 @@
 		19A964CC2381245E00AAC7D3 /* libc++.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = "libc++.tbd"; path = "usr/lib/libc++.tbd"; sourceTree = SDKROOT; };
 		19A964CE2381246200AAC7D3 /* libxml2.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libxml2.tbd; path = usr/lib/libxml2.tbd; sourceTree = SDKROOT; };
 		19A964D02381246800AAC7D3 /* libsqlite3.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libsqlite3.tbd; path = usr/lib/libsqlite3.tbd; sourceTree = SDKROOT; };
+		19A964D22381250200AAC7D3 /* KakaoMapView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KakaoMapView.swift; sourceTree = "<group>"; };
+		19A964D52381253D00AAC7D3 /* KakaoMapUIView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KakaoMapUIView.swift; sourceTree = "<group>"; };
+		19A964D7238126AD00AAC7D3 /* gigi-bridge.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "gigi-bridge.h"; sourceTree = "<group>"; };
 		2925A7B9682F3DCFCD77A171DA8532CD /* Pods-gigi.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-gigi.release.xcconfig"; path = "Target Support Files/Pods-gigi/Pods-gigi.release.xcconfig"; sourceTree = "<group>"; };
 		2BB003C5ED0784D898EA9387BFCD2162 /* gigi.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = gigi.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9F40FDE06DB803CBF6F0561C7EB7F2D6 /* Pods_gigi.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_gigi.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -135,7 +139,6 @@
 				19A964C72381244F00AAC7D3 /* SystemConfiguration.framework in Frameworks */,
 				19A964C52381244500AAC7D3 /* OpenGLES.framework in Frameworks */,
 				749CA54119529C4ED25615781282B52E /* Pods_gigi.framework in Frameworks */,
-				19A964B22381243000AAC7D3 /* DaumMap in Frameworks */,
 				19A9647C2381242100AAC7D3 /* KakaoCommon.framework in Frameworks */,
 				19A9647E2381242100AAC7D3 /* KakaoMessageTemplate.framework in Frameworks */,
 				19A964C32381243000AAC7D3 /* DaumMap.framework in Frameworks */,
@@ -180,6 +183,7 @@
 				19A9646A238122D600AAC7D3 /* AppDelegate.swift */,
 				19A9646E238122D600AAC7D3 /* SceneDelegate.swift */,
 				19A96464238122D600AAC7D3 /* Info.plist */,
+				19A964D7238126AD00AAC7D3 /* gigi-bridge.h */,
 			);
 			path = Supports;
 			sourceTree = "<group>";
@@ -205,7 +209,9 @@
 		19A96468238122D600AAC7D3 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				19A964D42381250600AAC7D3 /* UIKit Bridge */,
 				19A96469238122D600AAC7D3 /* ContentView.swift */,
+				19A964D22381250200AAC7D3 /* KakaoMapView.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -277,6 +283,14 @@
 				19A964992381242F00AAC7D3 /* MTMapCircle.h */,
 			);
 			path = Headers;
+			sourceTree = "<group>";
+		};
+		19A964D42381250600AAC7D3 /* UIKit Bridge */ = {
+			isa = PBXGroup;
+			children = (
+				19A964D52381253D00AAC7D3 /* KakaoMapUIView.swift */,
+			);
+			path = "UIKit Bridge";
 			sourceTree = "<group>";
 		};
 		7CADB359813AD0C8A020F1B508392C9A = {
@@ -467,10 +481,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				19A964D32381250200AAC7D3 /* KakaoMapView.swift in Sources */,
 				19A96475238122D600AAC7D3 /* AppDelegate.swift in Sources */,
 				19A96477238122D600AAC7D3 /* KakaoSearchByCategoryResponse.swift in Sources */,
 				19A96476238122D600AAC7D3 /* KakaoPlaceCategory.swift in Sources */,
 				19A96474238122D600AAC7D3 /* ContentView.swift in Sources */,
+				19A964D62381253D00AAC7D3 /* KakaoMapUIView.swift in Sources */,
 				19A96473238122D600AAC7D3 /* Log.swift in Sources */,
 				19A96478238122D600AAC7D3 /* SceneDelegate.swift in Sources */,
 			);
@@ -517,6 +533,7 @@
 				MARKETING_VERSION = 1.0.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.ddd.gigi;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "/Users/presto/Developer/Xcode/gigi/gigi/Supports/gigi-bridge.h";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -549,6 +566,7 @@
 				MARKETING_VERSION = 1.0.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.ddd.gigi;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "/Users/presto/Developer/Xcode/gigi/gigi/Supports/gigi-bridge.h";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
