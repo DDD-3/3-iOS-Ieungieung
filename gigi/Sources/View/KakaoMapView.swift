@@ -8,6 +8,7 @@
 
 import SwiftUI
 
+/// 카카오 맵뷰.
 struct KakaoMapView: UIViewRepresentable {
   func makeUIView(context: Context) -> KakaoMapUIView {
     return KakaoMapUIView()
@@ -20,6 +21,8 @@ struct KakaoMapView: UIViewRepresentable {
   }
 }
 
+// MARK: - Coordinator 객체
+
 extension KakaoMapView {
   final class Coordinator: NSObject {
     private let parent: KakaoMapView
@@ -29,6 +32,8 @@ extension KakaoMapView {
     }
   }
 }
+
+// MARK: - MTMapViewDelegate 구현
 
 extension KakaoMapView.Coordinator: MTMapViewDelegate {
   func mapView(_ mapView: MTMapView!,

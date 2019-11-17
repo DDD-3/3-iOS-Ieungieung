@@ -56,6 +56,7 @@
 		19A964D12381246800AAC7D3 /* libsqlite3.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 19A964D02381246800AAC7D3 /* libsqlite3.tbd */; };
 		19A964D32381250200AAC7D3 /* KakaoMapView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19A964D22381250200AAC7D3 /* KakaoMapView.swift */; };
 		19A964D62381253D00AAC7D3 /* KakaoMapUIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19A964D52381253D00AAC7D3 /* KakaoMapUIView.swift */; };
+		19A964DD23812C8300AAC7D3 /* LinkShareView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19A964DC23812C8300AAC7D3 /* LinkShareView.swift */; };
 		749CA54119529C4ED25615781282B52E /* Pods_gigi.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9F40FDE06DB803CBF6F0561C7EB7F2D6 /* Pods_gigi.framework */; };
 /* End PBXBuildFile section */
 
@@ -120,6 +121,7 @@
 		19A964D22381250200AAC7D3 /* KakaoMapView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KakaoMapView.swift; sourceTree = "<group>"; };
 		19A964D52381253D00AAC7D3 /* KakaoMapUIView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KakaoMapUIView.swift; sourceTree = "<group>"; };
 		19A964D7238126AD00AAC7D3 /* gigi-bridge.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "gigi-bridge.h"; sourceTree = "<group>"; };
+		19A964DC23812C8300AAC7D3 /* LinkShareView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LinkShareView.swift; sourceTree = "<group>"; };
 		2925A7B9682F3DCFCD77A171DA8532CD /* Pods-gigi.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-gigi.release.xcconfig"; path = "Target Support Files/Pods-gigi/Pods-gigi.release.xcconfig"; sourceTree = "<group>"; };
 		2BB003C5ED0784D898EA9387BFCD2162 /* gigi.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = gigi.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9F40FDE06DB803CBF6F0561C7EB7F2D6 /* Pods_gigi.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_gigi.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -212,6 +214,7 @@
 				19A964D42381250600AAC7D3 /* UIKit Bridge */,
 				19A96469238122D600AAC7D3 /* ContentView.swift */,
 				19A964D22381250200AAC7D3 /* KakaoMapView.swift */,
+				19A964DC23812C8300AAC7D3 /* LinkShareView.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -487,6 +490,7 @@
 				19A96476238122D600AAC7D3 /* KakaoPlaceCategory.swift in Sources */,
 				19A96474238122D600AAC7D3 /* ContentView.swift in Sources */,
 				19A964D62381253D00AAC7D3 /* KakaoMapUIView.swift in Sources */,
+				19A964DD23812C8300AAC7D3 /* LinkShareView.swift in Sources */,
 				19A96473238122D600AAC7D3 /* Log.swift in Sources */,
 				19A96478238122D600AAC7D3 /* SceneDelegate.swift in Sources */,
 			);
