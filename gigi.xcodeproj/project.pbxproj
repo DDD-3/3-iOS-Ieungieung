@@ -7,182 +7,167 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		198F95DF2374415A00CC442D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 198F95DE2374415A00CC442D /* AppDelegate.swift */; };
-		198F95E12374415A00CC442D /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 198F95E02374415A00CC442D /* SceneDelegate.swift */; };
-		198F95E32374415A00CC442D /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 198F95E22374415A00CC442D /* ContentView.swift */; };
-		198F95E52374415D00CC442D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 198F95E42374415D00CC442D /* Assets.xcassets */; };
-		198F95E82374415D00CC442D /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 198F95E72374415D00CC442D /* Preview Assets.xcassets */; };
-		198F95EB2374415D00CC442D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 198F95E92374415D00CC442D /* LaunchScreen.storyboard */; };
-		198F96132377AD8600CC442D /* KakaoPlaceCategory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 198F96122377AD8600CC442D /* KakaoPlaceCategory.swift */; };
-		198F96172377AFF300CC442D /* KakaoSearchByCategoryResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 198F96162377AFF300CC442D /* KakaoSearchByCategoryResponse.swift */; };
-		198F961C2377B4E600CC442D /* Log.swift in Sources */ = {isa = PBXBuildFile; fileRef = 198F961B2377B4E600CC442D /* Log.swift */; };
-		198F960C23770B7F00CC442D /* KakaoMessageTemplate.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 198F960923770B7F00CC442D /* KakaoMessageTemplate.framework */; };
-		198F960D23770B7F00CC442D /* KakaoLink.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 198F960A23770B7F00CC442D /* KakaoLink.framework */; };
-		198F960E23770B7F00CC442D /* KakaoCommon.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 198F960B23770B7F00CC442D /* KakaoCommon.framework */; };
-		AE3B62E381A6142F5C7A0DCD /* Pods_gigi.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C4B46B37D6FDAEA701D46DB5 /* Pods_gigi.framework */; };
+		19A9646F238122D600AAC7D3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 19A9645E238122D600AAC7D3 /* Assets.xcassets */; };
+		19A96470238122D600AAC7D3 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 19A96460238122D600AAC7D3 /* Preview Assets.xcassets */; };
+		19A96471238122D600AAC7D3 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 19A96461238122D600AAC7D3 /* LaunchScreen.storyboard */; };
+		19A96473238122D600AAC7D3 /* Log.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19A96467238122D600AAC7D3 /* Log.swift */; };
+		19A96474238122D600AAC7D3 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19A96469238122D600AAC7D3 /* ContentView.swift */; };
+		19A96475238122D600AAC7D3 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19A9646A238122D600AAC7D3 /* AppDelegate.swift */; };
+		19A96476238122D600AAC7D3 /* KakaoPlaceCategory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19A9646C238122D600AAC7D3 /* KakaoPlaceCategory.swift */; };
+		19A96477238122D600AAC7D3 /* KakaoSearchByCategoryResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19A9646D238122D600AAC7D3 /* KakaoSearchByCategoryResponse.swift */; };
+		19A96478238122D600AAC7D3 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19A9646E238122D600AAC7D3 /* SceneDelegate.swift */; };
+		749CA54119529C4ED25615781282B52E /* Pods_gigi.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9F40FDE06DB803CBF6F0561C7EB7F2D6 /* Pods_gigi.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		198F95DB2374415A00CC442D /* gigi.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = gigi.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		198F95DE2374415A00CC442D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		198F95E02374415A00CC442D /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		198F95E22374415A00CC442D /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
-		198F95E42374415D00CC442D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		198F95E72374415D00CC442D /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
-		198F95EA2374415D00CC442D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
-		198F95EC2374415D00CC442D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		198F96122377AD8600CC442D /* KakaoPlaceCategory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KakaoPlaceCategory.swift; sourceTree = "<group>"; };
-		198F96162377AFF300CC442D /* KakaoSearchByCategoryResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KakaoSearchByCategoryResponse.swift; sourceTree = "<group>"; };
-		198F961B2377B4E600CC442D /* Log.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Log.swift; sourceTree = "<group>"; };
-		198F960923770B7F00CC442D /* KakaoMessageTemplate.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = KakaoMessageTemplate.framework; path = "../../../Downloads/kakao-ios-sdk-1/KakaoMessageTemplate.framework"; sourceTree = "<group>"; };
-		198F960A23770B7F00CC442D /* KakaoLink.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = KakaoLink.framework; path = "../../../Downloads/kakao-ios-sdk-1/KakaoLink.framework"; sourceTree = "<group>"; };
-		198F960B23770B7F00CC442D /* KakaoCommon.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = KakaoCommon.framework; path = "../../../Downloads/kakao-ios-sdk-1/KakaoCommon.framework"; sourceTree = "<group>"; };
-		4DD3A46DBD3DA982C5610FE9 /* Pods-gigi.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-gigi.release.xcconfig"; path = "Target Support Files/Pods-gigi/Pods-gigi.release.xcconfig"; sourceTree = "<group>"; };
-		AA83D2D42789F894D7D78830 /* Pods-gigi.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-gigi.debug.xcconfig"; path = "Target Support Files/Pods-gigi/Pods-gigi.debug.xcconfig"; sourceTree = "<group>"; };
-		C4B46B37D6FDAEA701D46DB5 /* Pods_gigi.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_gigi.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		19A9645E238122D600AAC7D3 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		19A96460238122D600AAC7D3 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		19A96462238122D600AAC7D3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		19A96464238122D600AAC7D3 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		19A96467238122D600AAC7D3 /* Log.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Log.swift; sourceTree = "<group>"; };
+		19A96469238122D600AAC7D3 /* ContentView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		19A9646A238122D600AAC7D3 /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		19A9646C238122D600AAC7D3 /* KakaoPlaceCategory.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KakaoPlaceCategory.swift; sourceTree = "<group>"; };
+		19A9646D238122D600AAC7D3 /* KakaoSearchByCategoryResponse.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KakaoSearchByCategoryResponse.swift; sourceTree = "<group>"; };
+		19A9646E238122D600AAC7D3 /* SceneDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		2925A7B9682F3DCFCD77A171DA8532CD /* Pods-gigi.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-gigi.release.xcconfig"; path = "Target Support Files/Pods-gigi/Pods-gigi.release.xcconfig"; sourceTree = "<group>"; };
+		2BB003C5ED0784D898EA9387BFCD2162 /* gigi.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = gigi.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		9F40FDE06DB803CBF6F0561C7EB7F2D6 /* Pods_gigi.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_gigi.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		D9DF36010BEECA07E1A018DBEBCB5576 /* Pods-gigi.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-gigi.debug.xcconfig"; path = "Target Support Files/Pods-gigi/Pods-gigi.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		198F95D82374415A00CC442D /* Frameworks */ = {
+		15FF457CF3D44F09AEC082E9456CBC47 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				198F960C23770B7F00CC442D /* KakaoMessageTemplate.framework in Frameworks */,
-				198F960E23770B7F00CC442D /* KakaoCommon.framework in Frameworks */,
-				AE3B62E381A6142F5C7A0DCD /* Pods_gigi.framework in Frameworks */,
-				198F960D23770B7F00CC442D /* KakaoLink.framework in Frameworks */,
+				749CA54119529C4ED25615781282B52E /* Pods_gigi.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		198F95D22374415A00CC442D = {
+		19591A7D5F45824A05320174EED9BF4B /* gigi */ = {
 			isa = PBXGroup;
 			children = (
-				198F95DD2374415A00CC442D /* gigi */,
-				198F95DC2374415A00CC442D /* Products */,
-				A86AD22D9EEE8E02E9987922 /* Pods */,
-				751D664EF8DFCAC96AED8CE4 /* Frameworks */,
-			);
-			sourceTree = "<group>";
-		};
-		198F95DC2374415A00CC442D /* Products */ = {
-			isa = PBXGroup;
-			children = (
-				198F95DB2374415A00CC442D /* gigi.app */,
-			);
-			name = Products;
-			sourceTree = "<group>";
-		};
-		198F95DD2374415A00CC442D /* gigi */ = {
-			isa = PBXGroup;
-			children = (
-				198F96112377AD7700CC442D /* KakaoAPI */,
-				198F961A2377B4DD00CC442D /* Common */,
-				198F95DE2374415A00CC442D /* AppDelegate.swift */,
-				198F95E02374415A00CC442D /* SceneDelegate.swift */,
-				198F95E22374415A00CC442D /* ContentView.swift */,
-				198F95E42374415D00CC442D /* Assets.xcassets */,
-				198F95E92374415D00CC442D /* LaunchScreen.storyboard */,
-				198F95EC2374415D00CC442D /* Info.plist */,
-				198F95E62374415D00CC442D /* Preview Content */,
-				198F95FA23767C1600CC442D /* Supports */,
-				198F95F923767C1200CC442D /* Sources */,
-				198F95F823767C0D00CC442D /* Resources */,
+				19A9645D238122D600AAC7D3 /* Resources */,
+				19A96465238122D600AAC7D3 /* Sources */,
+				19A96463238122D600AAC7D3 /* Supports */,
 			);
 			path = gigi;
 			sourceTree = "<group>";
 		};
-		198F95E62374415D00CC442D /* Preview Content */ = {
+		19A9645D238122D600AAC7D3 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
-				198F95E72374415D00CC442D /* Preview Assets.xcassets */,
-			);
-			path = "Preview Content";
-			sourceTree = "<group>";
-		};
-		198F96112377AD7700CC442D /* KakaoAPI */ = {
-			isa = PBXGroup;
-			children = (
-				198F96122377AD8600CC442D /* KakaoPlaceCategory.swift */,
-				198F96162377AFF300CC442D /* KakaoSearchByCategoryResponse.swift */,
-			);
-			path = KakaoAPI;
-		198F961A2377B4DD00CC442D /* Common */ = {
-			isa = PBXGroup;
-			children = (
-				198F961B2377B4E600CC442D /* Log.swift */,
-			);
-			path = Common;
-		198F95F823767C0D00CC442D /* Resources */ = {
-			isa = PBXGroup;
-			children = (
-				198F95E62374415D00CC442D /* Preview Content */,
-				198F95E92374415D00CC442D /* LaunchScreen.storyboard */,
-				198F95E42374415D00CC442D /* Assets.xcassets */,
+				19A9645E238122D600AAC7D3 /* Assets.xcassets */,
+				19A9645F238122D600AAC7D3 /* Preview Content */,
+				19A96461238122D600AAC7D3 /* LaunchScreen.storyboard */,
 			);
 			path = Resources;
 			sourceTree = "<group>";
 		};
-		198F95F923767C1200CC442D /* Sources */ = {
+		19A9645F238122D600AAC7D3 /* Preview Content */ = {
 			isa = PBXGroup;
 			children = (
-				198F95FC23767C6400CC442D /* View */,
-				198F95DE2374415A00CC442D /* AppDelegate.swift */,
-				198F95E02374415A00CC442D /* SceneDelegate.swift */,
+				19A96460238122D600AAC7D3 /* Preview Assets.xcassets */,
 			);
-			path = Sources;
+			path = "Preview Content";
 			sourceTree = "<group>";
 		};
-		198F95FA23767C1600CC442D /* Supports */ = {
+		19A96463238122D600AAC7D3 /* Supports */ = {
 			isa = PBXGroup;
 			children = (
-				198F95EC2374415D00CC442D /* Info.plist */,
+				19A9646A238122D600AAC7D3 /* AppDelegate.swift */,
+				19A9646E238122D600AAC7D3 /* SceneDelegate.swift */,
+				19A96464238122D600AAC7D3 /* Info.plist */,
 			);
 			path = Supports;
 			sourceTree = "<group>";
 		};
-		198F95FC23767C6400CC442D /* View */ = {
+		19A96465238122D600AAC7D3 /* Sources */ = {
 			isa = PBXGroup;
 			children = (
-				198F95E22374415A00CC442D /* ContentView.swift */,
+				19A9646B238122D600AAC7D3 /* KakaoAPI */,
+				19A96466238122D600AAC7D3 /* Common */,
+				19A96468238122D600AAC7D3 /* View */,
+			);
+			path = Sources;
+			sourceTree = "<group>";
+		};
+		19A96466238122D600AAC7D3 /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				19A96467238122D600AAC7D3 /* Log.swift */,
+			);
+			path = Common;
+			sourceTree = "<group>";
+		};
+		19A96468238122D600AAC7D3 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				19A96469238122D600AAC7D3 /* ContentView.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
 		};
-		751D664EF8DFCAC96AED8CE4 /* Frameworks */ = {
+		19A9646B238122D600AAC7D3 /* KakaoAPI */ = {
 			isa = PBXGroup;
 			children = (
-				C4B46B37D6FDAEA701D46DB5 /* Pods_gigi.framework */,
-				198F960B23770B7F00CC442D /* KakaoCommon.framework */,
-				198F960A23770B7F00CC442D /* KakaoLink.framework */,
-				198F960923770B7F00CC442D /* KakaoMessageTemplate.framework */,
+				19A9646C238122D600AAC7D3 /* KakaoPlaceCategory.swift */,
+				19A9646D238122D600AAC7D3 /* KakaoSearchByCategoryResponse.swift */,
+			);
+			path = KakaoAPI;
+			sourceTree = "<group>";
+		};
+		7CADB359813AD0C8A020F1B508392C9A = {
+			isa = PBXGroup;
+			children = (
+				19591A7D5F45824A05320174EED9BF4B /* gigi */,
+				F00BA8D9EE3CFA57981D09F5A69AEFE3 /* Frameworks */,
+				CFFB3A1737D8193214AF6D5281E1D279 /* Pods */,
+				FE9C2F11E8388C3C5E34DDE826931ACA /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		CFFB3A1737D8193214AF6D5281E1D279 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				D9DF36010BEECA07E1A018DBEBCB5576 /* Pods-gigi.debug.xcconfig */,
+				2925A7B9682F3DCFCD77A171DA8532CD /* Pods-gigi.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		F00BA8D9EE3CFA57981D09F5A69AEFE3 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				9F40FDE06DB803CBF6F0561C7EB7F2D6 /* Pods_gigi.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		A86AD22D9EEE8E02E9987922 /* Pods */ = {
+		FE9C2F11E8388C3C5E34DDE826931ACA /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				AA83D2D42789F894D7D78830 /* Pods-gigi.debug.xcconfig */,
-				4DD3A46DBD3DA982C5610FE9 /* Pods-gigi.release.xcconfig */,
+				2BB003C5ED0784D898EA9387BFCD2162 /* gigi.app */,
 			);
-			path = Pods;
+			name = Products;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		198F95DA2374415A00CC442D /* gigi */ = {
+		1689803BA530685BAC8A8849D78150DD /* gigi */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 198F95EF2374415D00CC442D /* Build configuration list for PBXNativeTarget "gigi" */;
+			buildConfigurationList = 6808E7802956A52AF9735B68E5AE6509 /* Build configuration list for PBXNativeTarget "gigi" */;
 			buildPhases = (
-				95648E82449C7547D75BB287 /* [CP] Check Pods Manifest.lock */,
-				198F95D72374415A00CC442D /* Sources */,
-				198F95D82374415A00CC442D /* Frameworks */,
-				198F95D92374415A00CC442D /* Resources */,
-				A5EFD57292D71BA3365DB26D /* [CP] Embed Pods Frameworks */,
+				34BCF1A38D6612EF3E247C76A8ECD23C /* [CP] Check Pods Manifest.lock */,
+				D2E2B4BE8391BCC192AD279984CD6CED /* Sources */,
+				15FF457CF3D44F09AEC082E9456CBC47 /* Frameworks */,
+				C2538CB93187A0037F27B1BFE5A0DF62 /* Resources */,
+				08F6E284928FA77C4C0271F24D1C88FA /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -190,25 +175,25 @@
 			);
 			name = gigi;
 			productName = gigi;
-			productReference = 198F95DB2374415A00CC442D /* gigi.app */;
+			productReference = 2BB003C5ED0784D898EA9387BFCD2162 /* gigi.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
-		198F95D32374415A00CC442D /* Project object */ = {
+		D5F642A63DE1160ABC2CD1D904A3998E /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 1120;
 				LastUpgradeCheck = 1120;
 				ORGANIZATIONNAME = ieungieung;
 				TargetAttributes = {
-					198F95DA2374415A00CC442D = {
+					1689803BA530685BAC8A8849D78150DD = {
 						CreatedOnToolsVersion = 11.2;
 					};
 				};
 			};
-			buildConfigurationList = 198F95D62374415A00CC442D /* Build configuration list for PBXProject "gigi" */;
+			buildConfigurationList = 61084AD9B75F86DE739671E36FB9ED7F /* Build configuration list for PBXProject "gigi" */;
 			compatibilityVersion = "Xcode 9.3";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -216,31 +201,48 @@
 				en,
 				Base,
 			);
-			mainGroup = 198F95D22374415A00CC442D;
-			productRefGroup = 198F95DC2374415A00CC442D /* Products */;
+			mainGroup = 7CADB359813AD0C8A020F1B508392C9A;
+			productRefGroup = FE9C2F11E8388C3C5E34DDE826931ACA /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				198F95DA2374415A00CC442D /* gigi */,
+				1689803BA530685BAC8A8849D78150DD /* gigi */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		198F95D92374415A00CC442D /* Resources */ = {
+		C2538CB93187A0037F27B1BFE5A0DF62 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				198F95EB2374415D00CC442D /* LaunchScreen.storyboard in Resources */,
-				198F95E82374415D00CC442D /* Preview Assets.xcassets in Resources */,
-				198F95E52374415D00CC442D /* Assets.xcassets in Resources */,
+				19A96471238122D600AAC7D3 /* LaunchScreen.storyboard in Resources */,
+				19A96470238122D600AAC7D3 /* Preview Assets.xcassets in Resources */,
+				19A9646F238122D600AAC7D3 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		95648E82449C7547D75BB287 /* [CP] Check Pods Manifest.lock */ = {
+		08F6E284928FA77C4C0271F24D1C88FA /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-gigi/Pods-gigi-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-gigi/Pods-gigi-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-gigi/Pods-gigi-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		34BCF1A38D6612EF3E247C76A8ECD23C /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -262,46 +264,29 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
-		A5EFD57292D71BA3365DB26D /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-gigi/Pods-gigi-frameworks-${CONFIGURATION}-input-files.xcfilelist",
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-gigi/Pods-gigi-frameworks-${CONFIGURATION}-output-files.xcfilelist",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-gigi/Pods-gigi-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
-		198F95D72374415A00CC442D /* Sources */ = {
+		D2E2B4BE8391BCC192AD279984CD6CED /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				198F95DF2374415A00CC442D /* AppDelegate.swift in Sources */,
-				198F96172377AFF300CC442D /* KakaoSearchByCategoryResponse.swift in Sources */,
-				198F96132377AD8600CC442D /* KakaoPlaceCategory.swift in Sources */,
-				198F95E12374415A00CC442D /* SceneDelegate.swift in Sources */,
-				198F961C2377B4E600CC442D /* Log.swift in Sources */,
-				198F95E32374415A00CC442D /* ContentView.swift in Sources */,
+				19A96475238122D600AAC7D3 /* AppDelegate.swift in Sources */,
+				19A96477238122D600AAC7D3 /* KakaoSearchByCategoryResponse.swift in Sources */,
+				19A96476238122D600AAC7D3 /* KakaoPlaceCategory.swift in Sources */,
+				19A96474238122D600AAC7D3 /* ContentView.swift in Sources */,
+				19A96473238122D600AAC7D3 /* Log.swift in Sources */,
+				19A96478238122D600AAC7D3 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		198F95E92374415D00CC442D /* LaunchScreen.storyboard */ = {
+		19A96461238122D600AAC7D3 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
-				198F95EA2374415D00CC442D /* Base */,
+				19A96462238122D600AAC7D3 /* Base */,
 			);
 			name = LaunchScreen.storyboard;
 			sourceTree = "<group>";
@@ -309,7 +294,51 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
-		198F95ED2374415D00CC442D /* Debug */ = {
+		877C4D711AB5EBE378AA3EAD03B4D00A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = D9DF36010BEECA07E1A018DBEBCB5576 /* Pods-gigi.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_ASSET_PATHS = "\"gigi/Resources/Preview Content\"";
+				DEVELOPMENT_TEAM = H79MF628K3;
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = "$(SRCROOT)/gigi/Supports/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.ddd.gigi;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		8E081E605914FC94D4CA2492F053274C /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2925A7B9682F3DCFCD77A171DA8532CD /* Pods-gigi.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_ASSET_PATHS = "\"gigi/Resources/Preview Content\"";
+				DEVELOPMENT_TEAM = H79MF628K3;
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = "$(SRCROOT)/gigi/Supports/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.ddd.gigi;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		EDBEDDCF309C1CA5ABB20416322271C0 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -359,7 +388,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -369,7 +398,7 @@
 			};
 			name = Debug;
 		};
-		198F95EE2374415D00CC442D /* Release */ = {
+		FC19DE7AA274DEB7F7FFD387462F0723 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -413,7 +442,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
@@ -423,70 +452,28 @@
 			};
 			name = Release;
 		};
-		198F95F02374415D00CC442D /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = AA83D2D42789F894D7D78830 /* Pods-gigi.debug.xcconfig */;
-			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_ASSET_PATHS = "\"gigi/Resources/Preview Content\"";
-				DEVELOPMENT_TEAM = H79MF628K3;
-				ENABLE_PREVIEWS = YES;
-				INFOPLIST_FILE = gigi/Supports/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.ddd.gigi;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-			};
-			name = Debug;
-		};
-		198F95F12374415D00CC442D /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 4DD3A46DBD3DA982C5610FE9 /* Pods-gigi.release.xcconfig */;
-			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_ASSET_PATHS = "\"gigi/Resources/Preview Content\"";
-				DEVELOPMENT_TEAM = H79MF628K3;
-				ENABLE_PREVIEWS = YES;
-				INFOPLIST_FILE = gigi/Supports/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.ddd.gigi;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-			};
-			name = Release;
-		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		198F95D62374415A00CC442D /* Build configuration list for PBXProject "gigi" */ = {
+		61084AD9B75F86DE739671E36FB9ED7F /* Build configuration list for PBXProject "gigi" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				198F95ED2374415D00CC442D /* Debug */,
-				198F95EE2374415D00CC442D /* Release */,
+				EDBEDDCF309C1CA5ABB20416322271C0 /* Debug */,
+				FC19DE7AA274DEB7F7FFD387462F0723 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		198F95EF2374415D00CC442D /* Build configuration list for PBXNativeTarget "gigi" */ = {
+		6808E7802956A52AF9735B68E5AE6509 /* Build configuration list for PBXNativeTarget "gigi" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				198F95F02374415D00CC442D /* Debug */,
-				198F95F12374415D00CC442D /* Release */,
+				877C4D711AB5EBE378AA3EAD03B4D00A /* Debug */,
+				8E081E605914FC94D4CA2492F053274C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
-	rootObject = 198F95D32374415A00CC442D /* Project object */;
+	rootObject = D5F642A63DE1160ABC2CD1D904A3998E /* Project object */;
 }
