@@ -59,11 +59,11 @@
 <string>\(app_key)</string>
 
 <key>LSApplicationQueriesSchemes</key>
-   <array>
-     <string>kakao\(app_key)</string>
-     <string>kakaolink</string>
-     <string>kakaotalk-5.9.7</string>
-   </array>
+<array>
+  <string>kakao\(app_key)</string>
+  <string>kakaolink</string>
+  <string>kakaotalk-5.9.7</string>
+</array>
 ```
 
 > `develop` 브랜치에서 위의 개발 환경을 구성해 놓고, 각 기능 개발 시 브랜치를 새로 만들어서 작업하는 것을 권장합니다.
