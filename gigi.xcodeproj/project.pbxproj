@@ -57,6 +57,8 @@
 		19A964D32381250200AAC7D3 /* KakaoMapView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19A964D22381250200AAC7D3 /* KakaoMapView.swift */; };
 		19A964D62381253D00AAC7D3 /* KakaoMapUIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19A964D52381253D00AAC7D3 /* KakaoMapUIView.swift */; };
 		19A964DD23812C8300AAC7D3 /* LinkShareView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19A964DC23812C8300AAC7D3 /* LinkShareView.swift */; };
+		19A964E12382673000AAC7D3 /* LocationService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19A964E02382673000AAC7D3 /* LocationService.swift */; };
+		19A964E8238279EB00AAC7D3 /* Result+.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19A964E7238279EB00AAC7D3 /* Result+.swift */; };
 		749CA54119529C4ED25615781282B52E /* Pods_gigi.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9F40FDE06DB803CBF6F0561C7EB7F2D6 /* Pods_gigi.framework */; };
 /* End PBXBuildFile section */
 
@@ -122,6 +124,8 @@
 		19A964D52381253D00AAC7D3 /* KakaoMapUIView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KakaoMapUIView.swift; sourceTree = "<group>"; };
 		19A964D7238126AD00AAC7D3 /* gigi-bridge.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "gigi-bridge.h"; sourceTree = "<group>"; };
 		19A964DC23812C8300AAC7D3 /* LinkShareView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LinkShareView.swift; sourceTree = "<group>"; };
+		19A964E02382673000AAC7D3 /* LocationService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationService.swift; sourceTree = "<group>"; };
+		19A964E7238279EB00AAC7D3 /* Result+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Result+.swift"; sourceTree = "<group>"; };
 		2925A7B9682F3DCFCD77A171DA8532CD /* Pods-gigi.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-gigi.release.xcconfig"; path = "Target Support Files/Pods-gigi/Pods-gigi.release.xcconfig"; sourceTree = "<group>"; };
 		2BB003C5ED0784D898EA9387BFCD2162 /* gigi.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = gigi.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9F40FDE06DB803CBF6F0561C7EB7F2D6 /* Pods_gigi.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_gigi.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -193,6 +197,8 @@
 		19A96465238122D600AAC7D3 /* Sources */ = {
 			isa = PBXGroup;
 			children = (
+				19A964E923827AFA00AAC7D3 /* Service */,
+				19A964E6238279E400AAC7D3 /* Extension */,
 				19A9646B238122D600AAC7D3 /* KakaoAPI */,
 				19A96466238122D600AAC7D3 /* Common */,
 				19A96468238122D600AAC7D3 /* View */,
@@ -294,6 +300,22 @@
 				19A964D52381253D00AAC7D3 /* KakaoMapUIView.swift */,
 			);
 			path = "UIKit Bridge";
+			sourceTree = "<group>";
+		};
+		19A964E6238279E400AAC7D3 /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+				19A964E7238279EB00AAC7D3 /* Result+.swift */,
+			);
+			path = Extension;
+			sourceTree = "<group>";
+		};
+		19A964E923827AFA00AAC7D3 /* Service */ = {
+			isa = PBXGroup;
+			children = (
+				19A964E02382673000AAC7D3 /* LocationService.swift */,
+			);
+			path = Service;
 			sourceTree = "<group>";
 		};
 		7CADB359813AD0C8A020F1B508392C9A = {
@@ -486,6 +508,8 @@
 			files = (
 				19A964D32381250200AAC7D3 /* KakaoMapView.swift in Sources */,
 				19A96475238122D600AAC7D3 /* AppDelegate.swift in Sources */,
+				19A964E8238279EB00AAC7D3 /* Result+.swift in Sources */,
+				19A964E12382673000AAC7D3 /* LocationService.swift in Sources */,
 				19A96477238122D600AAC7D3 /* KakaoSearchByCategoryResponse.swift in Sources */,
 				19A96476238122D600AAC7D3 /* KakaoPlaceCategory.swift in Sources */,
 				19A96474238122D600AAC7D3 /* ContentView.swift in Sources */,
