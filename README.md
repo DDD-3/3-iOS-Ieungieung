@@ -8,7 +8,7 @@
 
 - iOS 13
 - Swift 5.1
-- SwiftUI
+- ~~SwiftUI~~
 - Combine
 
 ## 개발환경 설정
@@ -32,7 +32,7 @@
 4. 프로젝트의 `Frameworks` 디렉토리에 `DaumMap.embeddedframework` 디렉토리를 추가합니다.
 5. 프로젝트의 `Targets -> Build Phases -> Link Binary With Libraries` 항목에 다음의 프레임워크를 추가합니다.
    - `OpenGLES.framework`
-   - `SystemConfigure.framework`
+   - `SystemConfiguration.framework`
    - `CoreLocation.framework`
    - `QuartzCore.framework`
    - `libc++.tbd`
@@ -69,3 +69,15 @@
 > `develop` 브랜치에서 위의 개발 환경을 구성해 놓고, 각 기능 개발 시 브랜치를 새로 만들어서 작업하는 것을 권장합니다.
 
 > kakao가 제공하는 프레임워크와 Info.plist 파일은 git이 추적하지 않습니다.
+
+## 기타
+
+### git pre-commit
+
+`./.git/hooks/pre-commit` 파일에 의해 커밋할 때 해당 파일에 기록된 명령이 실행됩니다.
+
+```sh
+swiftformat --indent 2 --stripunusedargs closure-only gigi
+```
+
+[여기](https://github.com/nicklockwood/SwiftFormat/blob/master/Rules.md)에서 swiftformat의 규칙들을 확인하세요.
