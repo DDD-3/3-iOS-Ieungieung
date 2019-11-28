@@ -16,6 +16,10 @@ final class VisitorMainViewController: GigiViewController {
 
   private let viewModel = VisitorMainViewModel()
 
+  override func setup() {
+    navigationItem.backBarButtonItem = .init()
+  }
+
   override func bind() {
     nextButton.rx.tap
       .subscribe(onNext: { [weak self] _ in

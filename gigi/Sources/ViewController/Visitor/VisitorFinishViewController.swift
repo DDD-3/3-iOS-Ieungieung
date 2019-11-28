@@ -8,8 +8,11 @@
 
 import UIKit
 
-final class VisitorFinishViewController: UIViewController {
-  override func viewDidLoad() {
-    super.viewDidLoad()
+import RxCocoa
+import RxSwift
+
+final class VisitorFinishViewController: GigiViewController {
+  override func setup() {
+    navigationItem.backBarButtonItem = .init()
   }
 }

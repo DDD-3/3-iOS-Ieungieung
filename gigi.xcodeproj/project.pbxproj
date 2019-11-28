@@ -28,6 +28,10 @@
 		19F2B12A238FC3E8003ED01C /* Assets.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19F2B128238FC3E8003ED01C /* Assets.swift */; };
 		19F2B12B238FC3E8003ED01C /* Storyboard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19F2B129238FC3E8003ED01C /* Storyboard.swift */; };
 		19F2B12D238FC8A3003ED01C /* VisitorStationViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19F2B12C238FC8A3003ED01C /* VisitorStationViewModel.swift */; };
+		19F2B12F238FEAA0003ED01C /* GigiTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19F2B12E238FEAA0003ED01C /* GigiTextField.swift */; };
+		19F2B131238FEB86003ED01C /* UIView+.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19F2B130238FEB86003ED01C /* UIView+.swift */; };
+		19F2B133238FEF01003ED01C /* UIColor+.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19F2B132238FEF01003ED01C /* UIColor+.swift */; };
+		19F2B135238FF016003ED01C /* VisitorFinishViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19F2B134238FF016003ED01C /* VisitorFinishViewModel.swift */; };
 		1A1B117A1279C977D8EA19B974C75588 /* map_pinup_custom@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 8D3906B3F12F10536A0C761A18BF183A /* map_pinup_custom@3x.png */; };
 		247D7F9256439B497EDFAAE5D2EB40B5 /* map_present.png in Resources */ = {isa = PBXBuildFile; fileRef = C69E3607C1910A0334639B95EBCEA2A8 /* map_present.png */; };
 		3017B90A3E8A786129DB491C7E881781 /* map_pin@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 8B795F677188ED5279C2C645DECF22B8 /* map_pin@3x.png */; };
@@ -93,6 +97,10 @@
 		19F2B128238FC3E8003ED01C /* Assets.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Assets.swift; sourceTree = "<group>"; };
 		19F2B129238FC3E8003ED01C /* Storyboard.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Storyboard.swift; sourceTree = "<group>"; };
 		19F2B12C238FC8A3003ED01C /* VisitorStationViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VisitorStationViewModel.swift; sourceTree = "<group>"; };
+		19F2B12E238FEAA0003ED01C /* GigiTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GigiTextField.swift; sourceTree = "<group>"; };
+		19F2B130238FEB86003ED01C /* UIView+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+.swift"; sourceTree = "<group>"; };
+		19F2B132238FEF01003ED01C /* UIColor+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor+.swift"; sourceTree = "<group>"; };
+		19F2B134238FF016003ED01C /* VisitorFinishViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VisitorFinishViewModel.swift; sourceTree = "<group>"; };
 		1BE116408B4BFC0AF39A926E553E2DB8 /* MTMapGeometry.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MTMapGeometry.h; sourceTree = "<group>"; };
 		1FE71C718E9115188E664832FFE4FF97 /* daum_copyright.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = daum_copyright.png; sourceTree = "<group>"; };
 		2113AA84E4694A88AD2A5B3B15846D61 /* th_line.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = th_line.png; sourceTree = "<group>"; };
@@ -209,6 +217,7 @@
 				19A96601238783DE00AAC7D3 /* VisitorStationViewController.swift */,
 				19F2B12C238FC8A3003ED01C /* VisitorStationViewModel.swift */,
 				19A96603238783FB00AAC7D3 /* VisitorFinishViewController.swift */,
+				19F2B134238FF016003ED01C /* VisitorFinishViewModel.swift */,
 			);
 			path = Visitor;
 			sourceTree = "<group>";
@@ -283,6 +292,7 @@
 			isa = PBXGroup;
 			children = (
 				ED5473A48E3418F08F464DC2DB2ABB73 /* KakaoMapView.swift */,
+				19F2B12E238FEAA0003ED01C /* GigiTextField.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -379,6 +389,8 @@
 			children = (
 				09B7859F3606BD9FD5AAA0F651FDE8D9 /* Result+.swift */,
 				19A966052387843200AAC7D3 /* NSObject+.swift */,
+				19F2B130238FEB86003ED01C /* UIView+.swift */,
+				19F2B132238FEF01003ED01C /* UIColor+.swift */,
 			);
 			path = Extension;
 			sourceTree = "<group>";
@@ -569,20 +581,24 @@
 				19A966062387843200AAC7D3 /* NSObject+.swift in Sources */,
 				19F2B125238FC14C003ED01C /* VisitorNameViewModel.swift in Sources */,
 				C4C3A59991BD5520DA7A8320E2CCD539 /* KakaoMapView.swift in Sources */,
+				19F2B131238FEB86003ED01C /* UIView+.swift in Sources */,
 				1087A72C42C029C0D02EB65BFDED13FA /* KakaoPlaceCategory.swift in Sources */,
 				792D417A35A2AA2A08CF898A8B618FF2 /* KakaoSearchByCategoryResponse.swift in Sources */,
 				19F2B12A238FC3E8003ED01C /* Assets.swift in Sources */,
 				19F2B123238FBEB1003ED01C /* GigiViewController.swift in Sources */,
 				80F7E4E400032F853EBA11CD77578008 /* LocationService.swift in Sources */,
+				19F2B135238FF016003ED01C /* VisitorFinishViewModel.swift in Sources */,
 				19A96600238783D400AAC7D3 /* VisitorNameViewController.swift in Sources */,
 				19A96604238783FB00AAC7D3 /* VisitorFinishViewController.swift in Sources */,
 				19F2B120238FBA2F003ED01C /* VisitorMainViewModel.swift in Sources */,
 				19A96602238783DE00AAC7D3 /* VisitorStationViewController.swift in Sources */,
 				19A96608238784B000AAC7D3 /* VisitorMainViewController.swift in Sources */,
+				19F2B12F238FEAA0003ED01C /* GigiTextField.swift in Sources */,
 				3383D9439DFBAA2AA03973A16189A94E /* Log.swift in Sources */,
 				194CB58C2580B4ED21B304786D1C5B28 /* Result+.swift in Sources */,
 				19F2B12D238FC8A3003ED01C /* VisitorStationViewModel.swift in Sources */,
 				19F2B12B238FC3E8003ED01C /* Storyboard.swift in Sources */,
+				19F2B133238FEF01003ED01C /* UIColor+.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

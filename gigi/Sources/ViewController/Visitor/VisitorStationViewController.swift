@@ -12,14 +12,15 @@ import RxCocoa
 import RxSwift
 
 final class VisitorStationViewController: GigiViewController {
-  @IBOutlet private var nearStationNameTextField: UITextField!
-  @IBOutlet private var backStationNameTextField: UITextField!
+  @IBOutlet private var nearStationNameTextField: GigiTextField!
+  @IBOutlet private var backStationNameTextField: GigiTextField!
   private var nextButton = UIBarButtonItem()
 
   private let viewModel = VisitorStationViewModel()
 
   override func setup() {
     nextButton.title = "다음"
+    navigationItem.backBarButtonItem = .init()
     navigationItem.setRightBarButton(nextButton, animated: false)
   }
 
@@ -40,8 +41,8 @@ final class VisitorStationViewController: GigiViewController {
 
     Observable
       .concat([
-        nearStationNameTextField.rx.controlEvent(.editingDidEndOnExit).asObservable(),
-        backStationNameTextField.rx.controlEvent(.editingDidEndOnExit).asObservable(),
+        nearStationNameTextField.rx.editingDidEndOnExit.asObservable(),
+        backStationNameTextField.rx.editingDidEndOnExit.asObservable(),
       ])
       .subscribe(onNext: { [weak self] _ in
         self?.viewModel.finishStationNameInput()

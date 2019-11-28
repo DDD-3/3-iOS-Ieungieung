@@ -12,13 +12,14 @@ import RxCocoa
 import RxSwift
 
 final class VisitorNameViewController: GigiViewController {
-  @IBOutlet private var nameTextField: UITextField!
+  @IBOutlet private var nameTextField: GigiTextField!
   private var nextButton = UIBarButtonItem()
 
   private let viewModel = VisitorNameViewModel()
 
   override func setup() {
     nextButton.title = "다음"
+    navigationItem.backBarButtonItem = .init()
     navigationItem.setRightBarButton(nextButton, animated: false)
   }
 
@@ -30,7 +31,7 @@ final class VisitorNameViewController: GigiViewController {
       })
       .disposed(by: disposeBag)
 
-    nameTextField.rx.controlEvent(.editingDidEndOnExit)
+    nameTextField.rx.editingDidEndOnExit
       .subscribe(onNext: { [weak self] _ in
         self?.viewModel.finishNameInput()
       })

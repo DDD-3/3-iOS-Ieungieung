@@ -50,44 +50,30 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="rzF-w8-KEn">
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="3aG-jN-Tub" customClass="GigiTextField" customModule="gigi" customModuleProvider="target">
                                 <rect key="frame" x="30" y="119.5" width="354" height="64"/>
-                                <subviews>
-                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="김여기닷" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="gC0-tp-xhD">
-                                        <rect key="frame" x="0.0" y="0.0" width="354" height="62"/>
-                                        <constraints>
-                                            <constraint firstAttribute="height" constant="62" id="5EO-zW-tPx"/>
-                                        </constraints>
-                                        <color key="textColor" red="0.76470588235294112" green="0.76470588235294112" blue="0.76470588235294112" alpha="1" colorSpace="calibratedRGB"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="22"/>
-                                        <textInputTraits key="textInputTraits" autocorrectionType="no" spellCheckingType="no" enablesReturnKeyAutomatically="YES" smartDashesType="no" smartInsertDeleteType="no" smartQuotesType="no"/>
-                                    </textField>
-                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="FTj-Em-32s">
-                                        <rect key="frame" x="0.0" y="62" width="354" height="2"/>
-                                        <color key="backgroundColor" red="0.60784313725490191" green="0.60784313725490191" blue="0.60784313725490191" alpha="1" colorSpace="calibratedRGB"/>
-                                        <constraints>
-                                            <constraint firstAttribute="height" constant="2" id="HcG-BP-mVK"/>
-                                        </constraints>
-                                    </view>
-                                </subviews>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="64" id="hno-ED-o4a"/>
+                                    <constraint firstAttribute="height" constant="64" id="b1m-r6-4Q8"/>
                                 </constraints>
-                            </stackView>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="string" keyPath="placeholder" value="김여기닷"/>
+                                </userDefinedRuntimeAttributes>
+                            </view>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <constraints>
                             <constraint firstItem="c46-Rt-VKC" firstAttribute="leading" secondItem="RB4-g5-hke" secondAttribute="leading" constant="30" id="4Jh-uT-1Jp"/>
-                            <constraint firstItem="rzF-w8-KEn" firstAttribute="leading" secondItem="I4b-TL-Sic" secondAttribute="leading" constant="30" id="DUJ-cO-I21"/>
                             <constraint firstAttribute="trailing" secondItem="c46-Rt-VKC" secondAttribute="trailing" constant="30" id="DWC-hy-S0F"/>
-                            <constraint firstItem="rzF-w8-KEn" firstAttribute="top" secondItem="c46-Rt-VKC" secondAttribute="bottom" constant="24" id="N19-kv-hP0"/>
-                            <constraint firstItem="I4b-TL-Sic" firstAttribute="trailing" secondItem="rzF-w8-KEn" secondAttribute="trailing" constant="30" id="ZU3-YB-6OU"/>
+                            <constraint firstItem="3aG-jN-Tub" firstAttribute="leading" secondItem="I4b-TL-Sic" secondAttribute="leading" constant="30" id="SDu-ec-iCQ"/>
+                            <constraint firstItem="3aG-jN-Tub" firstAttribute="trailing" secondItem="I4b-TL-Sic" secondAttribute="trailing" constant="-30" id="UE2-A6-2PC"/>
                             <constraint firstItem="c46-Rt-VKC" firstAttribute="top" secondItem="I4b-TL-Sic" secondAttribute="top" constant="20" id="wXB-Cm-8Yu"/>
+                            <constraint firstItem="3aG-jN-Tub" firstAttribute="top" secondItem="c46-Rt-VKC" secondAttribute="bottom" constant="24" id="wkS-75-34v"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="I4b-TL-Sic"/>
                     </view>
                     <connections>
-                        <outlet property="nameTextField" destination="gC0-tp-xhD" id="54U-jO-Ga5"/>
+                        <outlet property="nameTextField" destination="3aG-jN-Tub" id="oZd-fj-iQc"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="fKB-AJ-rpu" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -105,73 +91,7 @@
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jff-tD-2hA">
                                 <rect key="frame" x="30" y="64" width="354" height="78.5"/>
                                 <attributedString key="attributedText">
-                                    <fragment content="지금">
-                                        <attributes>
-                                            <font key="NSFont" size="26" name=".AppleSDGothicNeoI-Regular"/>
-                                            <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" lineSpacing="16" tighteningFactorForTruncation="0.0"/>
-                                        </attributes>
-                                    </fragment>
-                                    <fragment content=" ">
-                                        <attributes>
-                                            <font key="NSFont" metaFont="system" size="26"/>
-                                            <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" lineSpacing="16" tighteningFactorForTruncation="0.0"/>
-                                        </attributes>
-                                    </fragment>
-                                    <fragment content="가까운">
-                                        <attributes>
-                                            <font key="NSFont" size="26" name=".AppleSDGothicNeoI-Regular"/>
-                                            <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" lineSpacing="16" tighteningFactorForTruncation="0.0"/>
-                                        </attributes>
-                                    </fragment>
-                                    <fragment content=" ">
-                                        <attributes>
-                                            <font key="NSFont" metaFont="system" size="26"/>
-                                            <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" lineSpacing="16" tighteningFactorForTruncation="0.0"/>
-                                        </attributes>
-                                    </fragment>
-                                    <fragment content="역과">
-                                        <attributes>
-                                            <font key="NSFont" size="26" name=".AppleSDGothicNeoI-Regular"/>
-                                            <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" lineSpacing="16" tighteningFactorForTruncation="0.0"/>
-                                        </attributes>
-                                    </fragment>
-                                    <fragment content=" ">
-                                        <attributes>
-                                            <font key="NSFont" metaFont="system" size="26"/>
-                                            <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" lineSpacing="16" tighteningFactorForTruncation="0.0"/>
-                                        </attributes>
-                                    </fragment>
-                                    <fragment content="돌아갈">
-                                        <attributes>
-                                            <font key="NSFont" size="26" name=".AppleSDGothicNeoI-Regular"/>
-                                            <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" lineSpacing="16" tighteningFactorForTruncation="0.0"/>
-                                        </attributes>
-                                    </fragment>
-                                    <fragment content=" ">
-                                        <attributes>
-                                            <font key="NSFont" metaFont="system" size="26"/>
-                                            <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" lineSpacing="16" tighteningFactorForTruncation="0.0"/>
-                                        </attributes>
-                                    </fragment>
-                                    <fragment content="역을">
-                                        <attributes>
-                                            <font key="NSFont" size="26" name=".AppleSDGothicNeoI-Regular"/>
-                                            <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" lineSpacing="16" tighteningFactorForTruncation="0.0"/>
-                                        </attributes>
-                                    </fragment>
-                                    <fragment content=" ">
-                                        <attributes>
-                                            <font key="NSFont" metaFont="system" size="26"/>
-                                            <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" lineSpacing="16" tighteningFactorForTruncation="0.0"/>
-                                        </attributes>
-                                    </fragment>
-                                    <fragment content="선택해주세요">
-                                        <attributes>
-                                            <font key="NSFont" size="26" name=".AppleSDGothicNeoI-Regular"/>
-                                            <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" lineSpacing="16" tighteningFactorForTruncation="0.0"/>
-                                        </attributes>
-                                    </fragment>
-                                    <fragment content=".">
+                                    <fragment content="지금 가까운 역과 돌아갈 역을 선택해주세요.">
                                         <attributes>
                                             <font key="NSFont" metaFont="system" size="26"/>
                                             <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" lineSpacing="16" tighteningFactorForTruncation="0.0"/>
@@ -180,72 +100,46 @@
                                 </attributedString>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="Pad-IG-Thf">
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Yjn-Ic-3RM" customClass="GigiTextField" customModule="gigi" customModuleProvider="target">
                                 <rect key="frame" x="30" y="166.5" width="354" height="64"/>
-                                <subviews>
-                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="공덕역" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="PLy-Ry-AdQ">
-                                        <rect key="frame" x="0.0" y="0.0" width="354" height="62"/>
-                                        <constraints>
-                                            <constraint firstAttribute="height" constant="62" id="0ka-Sb-yEX"/>
-                                        </constraints>
-                                        <color key="textColor" red="0.76470588240000004" green="0.76470588240000004" blue="0.76470588240000004" alpha="1" colorSpace="calibratedRGB"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="22"/>
-                                        <textInputTraits key="textInputTraits" autocorrectionType="no" spellCheckingType="no" enablesReturnKeyAutomatically="YES" smartDashesType="no" smartInsertDeleteType="no" smartQuotesType="no"/>
-                                    </textField>
-                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="hpz-DQ-r51">
-                                        <rect key="frame" x="0.0" y="62" width="354" height="2"/>
-                                        <color key="backgroundColor" red="0.60784313729999995" green="0.60784313729999995" blue="0.60784313729999995" alpha="1" colorSpace="calibratedRGB"/>
-                                        <constraints>
-                                            <constraint firstAttribute="height" constant="2" id="Pax-T2-aH6"/>
-                                        </constraints>
-                                    </view>
-                                </subviews>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="64" id="I8w-Zd-rfb"/>
+                                    <constraint firstAttribute="height" constant="64" id="f2U-KL-mUu"/>
+                                    <constraint firstAttribute="height" constant="64" id="hmh-4Z-rUq"/>
                                 </constraints>
-                            </stackView>
-                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="eDB-oH-TFd">
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="string" keyPath="placeholder" value="공덕역"/>
+                                </userDefinedRuntimeAttributes>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ba0-Rz-0vE" customClass="GigiTextField" customModule="gigi" customModuleProvider="target">
                                 <rect key="frame" x="30" y="242.5" width="354" height="64"/>
-                                <subviews>
-                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="증산역" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="gsy-j2-evC">
-                                        <rect key="frame" x="0.0" y="0.0" width="354" height="62"/>
-                                        <constraints>
-                                            <constraint firstAttribute="height" constant="62" id="ZIL-d3-UFh"/>
-                                        </constraints>
-                                        <color key="textColor" red="0.76470588240000004" green="0.76470588240000004" blue="0.76470588240000004" alpha="1" colorSpace="calibratedRGB"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="22"/>
-                                        <textInputTraits key="textInputTraits" autocorrectionType="no" spellCheckingType="no" enablesReturnKeyAutomatically="YES" smartDashesType="no" smartInsertDeleteType="no" smartQuotesType="no"/>
-                                    </textField>
-                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="4zR-9p-rBb">
-                                        <rect key="frame" x="0.0" y="62" width="354" height="2"/>
-                                        <color key="backgroundColor" red="0.60784313729999995" green="0.60784313729999995" blue="0.60784313729999995" alpha="1" colorSpace="calibratedRGB"/>
-                                        <constraints>
-                                            <constraint firstAttribute="height" constant="2" id="5sb-Cg-2ll"/>
-                                        </constraints>
-                                    </view>
-                                </subviews>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="64" id="khI-73-DJV"/>
+                                    <constraint firstAttribute="height" constant="64" id="CgH-yo-m4w"/>
+                                    <constraint firstAttribute="height" constant="64" id="UzG-95-aAh"/>
                                 </constraints>
-                            </stackView>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="string" keyPath="placeholder" value="증산역"/>
+                                </userDefinedRuntimeAttributes>
+                            </view>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <constraints>
-                            <constraint firstItem="Pad-IG-Thf" firstAttribute="leading" secondItem="WTn-05-Ova" secondAttribute="leading" constant="30" id="1lj-ZY-xZa"/>
-                            <constraint firstItem="WTn-05-Ova" firstAttribute="trailing" secondItem="eDB-oH-TFd" secondAttribute="trailing" constant="30" id="7h7-KZ-j6g"/>
-                            <constraint firstItem="WTn-05-Ova" firstAttribute="trailing" secondItem="Pad-IG-Thf" secondAttribute="trailing" constant="30" id="KWI-Mu-eAU"/>
+                            <constraint firstItem="WTn-05-Ova" firstAttribute="trailing" secondItem="ba0-Rz-0vE" secondAttribute="trailing" constant="30" id="CX5-p0-uNw"/>
+                            <constraint firstItem="ba0-Rz-0vE" firstAttribute="leading" secondItem="WTn-05-Ova" secondAttribute="leading" constant="30" id="NQC-8W-7hi"/>
+                            <constraint firstItem="WTn-05-Ova" firstAttribute="trailing" secondItem="Yjn-Ic-3RM" secondAttribute="trailing" constant="30" id="P5q-a3-W2H"/>
                             <constraint firstItem="jff-tD-2hA" firstAttribute="leading" secondItem="WTn-05-Ova" secondAttribute="leading" constant="30" id="Sfb-cC-uQ8"/>
-                            <constraint firstItem="Pad-IG-Thf" firstAttribute="top" secondItem="jff-tD-2hA" secondAttribute="bottom" constant="24" id="arU-nn-4nW"/>
-                            <constraint firstItem="eDB-oH-TFd" firstAttribute="leading" secondItem="WTn-05-Ova" secondAttribute="leading" constant="30" id="fhG-NB-Gvc"/>
+                            <constraint firstItem="Yjn-Ic-3RM" firstAttribute="top" secondItem="jff-tD-2hA" secondAttribute="bottom" constant="24" id="TG2-sX-6N2"/>
                             <constraint firstItem="jff-tD-2hA" firstAttribute="top" secondItem="WTn-05-Ova" secondAttribute="top" constant="20" id="k5N-up-iGq"/>
-                            <constraint firstItem="eDB-oH-TFd" firstAttribute="top" secondItem="Pad-IG-Thf" secondAttribute="bottom" constant="12" id="qCk-rt-1Jp"/>
+                            <constraint firstItem="ba0-Rz-0vE" firstAttribute="top" secondItem="Yjn-Ic-3RM" secondAttribute="bottom" constant="12" id="rTc-x9-LAO"/>
                             <constraint firstItem="WTn-05-Ova" firstAttribute="trailing" secondItem="jff-tD-2hA" secondAttribute="trailing" constant="30" id="swk-jb-qCL"/>
+                            <constraint firstItem="Yjn-Ic-3RM" firstAttribute="leading" secondItem="WTn-05-Ova" secondAttribute="leading" constant="30" id="tyj-Pe-hva"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="WTn-05-Ova"/>
                     </view>
                     <connections>
-                        <outlet property="backStationNameTextField" destination="gsy-j2-evC" id="P5M-KW-Vg8"/>
-                        <outlet property="nearStationNameTextField" destination="PLy-Ry-AdQ" id="9nc-mR-FSM"/>
+                        <outlet property="backStationNameTextField" destination="ba0-Rz-0vE" id="l1M-If-q7u"/>
+                        <outlet property="nearStationNameTextField" destination="Yjn-Ic-3RM" id="Aaj-Y5-mSG"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="PWa-Jt-j0s" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -265,7 +159,7 @@
                                 <attributedString key="attributedText">
                                     <fragment content="완료되었습니다">
                                         <attributes>
-                                            <font key="NSFont" size="26" name=".AppleSDGothicNeoI-Regular"/>
+                                            <font key="NSFont" metaFont="system" size="26"/>
                                             <font key="NSOriginalFont" metaFont="system" size="26"/>
                                             <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" lineSpacing="16" tighteningFactorForTruncation="0.0"/>
                                         </attributes>
@@ -278,7 +172,7 @@
                                     </fragment>
                                     <fragment content="공유한">
                                         <attributes>
-                                            <font key="NSFont" size="26" name=".AppleSDGothicNeoI-Regular"/>
+                                            <font key="NSFont" metaFont="system" size="26"/>
                                             <font key="NSOriginalFont" metaFont="system" size="26"/>
                                             <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" lineSpacing="16" tighteningFactorForTruncation="0.0"/>
                                         </attributes>
@@ -291,7 +185,7 @@
                                     </fragment>
                                     <fragment content="친구와">
                                         <attributes>
-                                            <font key="NSFont" size="26" name=".AppleSDGothicNeoI-Regular"/>
+                                            <font key="NSFont" metaFont="system" size="26"/>
                                             <font key="NSOriginalFont" metaFont="system" size="26"/>
                                             <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" lineSpacing="16" tighteningFactorForTruncation="0.0"/>
                                         </attributes>
@@ -304,7 +198,7 @@
                                     </fragment>
                                     <fragment content="모임">
                                         <attributes>
-                                            <font key="NSFont" size="26" name=".AppleSDGothicNeoI-Regular"/>
+                                            <font key="NSFont" metaFont="system" size="26"/>
                                             <font key="NSOriginalFont" metaFont="system" size="26"/>
                                             <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" lineSpacing="16" tighteningFactorForTruncation="0.0"/>
                                         </attributes>
@@ -317,7 +211,7 @@
                                     </fragment>
                                     <fragment content="장소를">
                                         <attributes>
-                                            <font key="NSFont" size="26" name=".AppleSDGothicNeoI-Regular"/>
+                                            <font key="NSFont" metaFont="system" size="26"/>
                                             <font key="NSOriginalFont" metaFont="system" size="26"/>
                                             <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" lineSpacing="16" tighteningFactorForTruncation="0.0"/>
                                         </attributes>
@@ -330,7 +224,7 @@
                                     </fragment>
                                     <fragment content="추천받으세요">
                                         <attributes>
-                                            <font key="NSFont" size="26" name=".AppleSDGothicNeoI-Regular"/>
+                                            <font key="NSFont" metaFont="system" size="26"/>
                                             <font key="NSOriginalFont" metaFont="system" size="26"/>
                                             <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" lineSpacing="16" tighteningFactorForTruncation="0.0"/>
                                         </attributes>
