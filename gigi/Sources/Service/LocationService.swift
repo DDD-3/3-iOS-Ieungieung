@@ -6,8 +6,10 @@
 //  Copyright © 2019 Ieungieung. All rights reserved.
 //
 
-import Combine
 import CoreLocation
+
+import RxRelay
+import RxSwift
 
 typealias CoordinateResult = Result<CLLocationCoordinate2D, CLError>
 
@@ -33,21 +35,19 @@ final class LocationService: NSObject {
   }
 
   var coordinateResult: CoordinateResult? {
-    guard let result = locationManagerDelegateObject.coordinateResultSubject.value
+    guard let result = locationManagerDelegateObject.coordinateResultRelay.value
     else { return nil }
     return result
   }
 
-  var authorizationStatusPublisher: AnyPublisher<CLAuthorizationStatus, Never> {
-    return locationManagerDelegateObject.authorizationStatusSubject
+  var authorizationStatusObservable: Observable<CLAuthorizationStatus> {
+    return locationManagerDelegateObject.authorizationStatusRelay
       .compactMap { $0 }
-      .eraseToAnyPublisher()
   }
 
-  var coordinateResultPublisher: AnyPublisher<CoordinateResult, Never> {
-    return locationManagerDelegateObject.coordinateResultSubject
+  var coordinateResultObservable: Observable<CoordinateResult> {
+    return locationManagerDelegateObject.coordinateResultRelay
       .compactMap { $0 }
-      .eraseToAnyPublisher()
   }
 
   func requestAuthorization() {
@@ -66,22 +66,22 @@ final class LocationService: NSObject {
 // MARK: - Location Manager Delegate Object
 
 private final class LocationManagerDelegateObject: NSObject, CLLocationManagerDelegate {
-  let authorizationStatusSubject = CurrentValueSubject<CLAuthorizationStatus?, Never>(nil)
+  let authorizationStatusRelay = BehaviorRelay<CLAuthorizationStatus?>(value: nil)
 
-  let coordinateResultSubject = CurrentValueSubject<CoordinateResult?, Never>(nil)
+  let coordinateResultRelay = BehaviorRelay<CoordinateResult?>(value: nil)
 
   func locationManager(_ manager: CLLocationManager,
                        didChangeAuthorization status: CLAuthorizationStatus) {
-    authorizationStatusSubject.send(status)
+    authorizationStatusRelay.accept(status)
   }
 
   func locationManager(_ manager: CLLocationManager, didUpdateLocations locations: [CLLocation]) {
     guard let location = locations.first else { return }
-    coordinateResultSubject.send(.success(location.coordinate))
+    coordinateResultRelay.accept(.success(location.coordinate))
   }
 
   func locationManager(_ manager: CLLocationManager, didFailWithError error: Error) {
     guard let clError = error as? CLError else { return }
-    coordinateResultSubject.send(.failure(clError))
+    coordinateResultRelay.accept(.failure(clError))
   }
 }

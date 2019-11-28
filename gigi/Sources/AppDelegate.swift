@@ -6,17 +6,24 @@
 //  Copyright © 2019 Ieungieung. All rights reserved.
 //
 
-import Combine
 import UIKit
+
+import RxSwift
+import Then
 
 @UIApplicationMain
 final class AppDelegate: UIResponder, UIApplicationDelegate {
   var window: UIWindow?
 
-  private var cancellables = Set<AnyCancellable>()
+  private var disposeBag = DisposeBag()
 
   func application(_ application: UIApplication,
                    didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
+    UINavigationBar.appearance().do {
+      $0.setBackgroundImage(.init(), for: .default)
+      $0.shadowImage = .init()
+      $0.isTranslucent = true
+    }
     return true
   }
 }
@@ -27,34 +34,34 @@ private extension AppDelegate {
 
     service.requestAuthorization()
 
-    service.authorizationStatusPublisher
+    service.authorizationStatusObservable
       .filter { $0 == .authorizedWhenInUse || $0 == .authorizedAlways }
-      .sink(receiveValue: { _ in
+      .subscribe(onNext: { _ in
         Log.debug("위치 정보 권한 허용됨")
         service.startUpdatingLocation()
       })
-      .store(in: &cancellables)
+      .disposed(by: disposeBag)
 
-    service.authorizationStatusPublisher
+    service.authorizationStatusObservable
       .filter { !($0 == .authorizedWhenInUse || $0 == .authorizedAlways) }
-      .sink(receiveValue: { _ in
+      .subscribe(onNext: { _ in
         Log.error("위치 정보 권한 허용되지 않음")
       })
-      .store(in: &cancellables)
+      .disposed(by: disposeBag)
 
-    service.coordinateResultPublisher
+    service.coordinateResultObservable
       .compactMap { $0.success }
-      .sink(receiveValue: { coordinate in
+      .subscribe(onNext: { coordinate in
         Log.debug("현재 위치 갱신됨 : \(coordinate)")
         service.stopUpdatingLocation()
       })
-      .store(in: &cancellables)
+      .disposed(by: disposeBag)
 
-    service.coordinateResultPublisher
+    service.coordinateResultObservable
       .compactMap { $0.failure }
-      .sink(receiveValue: { error in
+      .subscribe(onNext: { error in
         Log.error("위치 갱신 에러 : \(error.localizedDescription)")
       })
-      .store(in: &cancellables)
+      .disposed(by: disposeBag)
   }
 }
