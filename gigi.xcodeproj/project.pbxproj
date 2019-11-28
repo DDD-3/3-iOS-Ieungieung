@@ -13,9 +13,23 @@
 		08A60E96203450FDCA65CFA81A280D40 /* map_pinup_custom.png in Resources */ = {isa = PBXBuildFile; fileRef = 0014A685BEFE438A55E67987AADFED49 /* map_pinup_custom.png */; };
 		1087A72C42C029C0D02EB65BFDED13FA /* KakaoPlaceCategory.swift in Sources */ = {isa = PBXBuildFile; fileRef = F34FABB5318195E55BA90A89B90F39B1 /* KakaoPlaceCategory.swift */; };
 		194CB58C2580B4ED21B304786D1C5B28 /* Result+.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09B7859F3606BD9FD5AAA0F651FDE8D9 /* Result+.swift */; };
+		19A965FE2387831A00AAC7D3 /* Visitor.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 19A965FD2387831A00AAC7D3 /* Visitor.storyboard */; };
+		19A96600238783D400AAC7D3 /* VisitorNameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19A965FF238783D400AAC7D3 /* VisitorNameViewController.swift */; };
+		19A96602238783DE00AAC7D3 /* VisitorStationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19A96601238783DE00AAC7D3 /* VisitorStationViewController.swift */; };
+		19A96604238783FB00AAC7D3 /* VisitorFinishViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19A96603238783FB00AAC7D3 /* VisitorFinishViewController.swift */; };
+		19A966062387843200AAC7D3 /* NSObject+.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19A966052387843200AAC7D3 /* NSObject+.swift */; };
+		19A96608238784B000AAC7D3 /* VisitorMainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19A96607238784B000AAC7D3 /* VisitorMainViewController.swift */; };
+		19F2B11B238FB980003ED01C /* Host.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 19F2B11A238FB980003ED01C /* Host.storyboard */; };
+		19F2B11E238FB98A003ED01C /* Map.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 19F2B11D238FB98A003ED01C /* Map.storyboard */; };
+		19F2B120238FBA2F003ED01C /* VisitorMainViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19F2B11F238FBA2F003ED01C /* VisitorMainViewModel.swift */; };
+		19F2B123238FBEB1003ED01C /* GigiViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19F2B122238FBEB1003ED01C /* GigiViewController.swift */; };
+		19F2B125238FC14C003ED01C /* VisitorNameViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19F2B124238FC14C003ED01C /* VisitorNameViewModel.swift */; };
+		19F2B127238FC397003ED01C /* swiftgen.yml in Resources */ = {isa = PBXBuildFile; fileRef = 19F2B126238FC397003ED01C /* swiftgen.yml */; };
+		19F2B12A238FC3E8003ED01C /* Assets.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19F2B128238FC3E8003ED01C /* Assets.swift */; };
+		19F2B12B238FC3E8003ED01C /* Storyboard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19F2B129238FC3E8003ED01C /* Storyboard.swift */; };
+		19F2B12D238FC8A3003ED01C /* VisitorStationViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19F2B12C238FC8A3003ED01C /* VisitorStationViewModel.swift */; };
 		1A1B117A1279C977D8EA19B974C75588 /* map_pinup_custom@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 8D3906B3F12F10536A0C761A18BF183A /* map_pinup_custom@3x.png */; };
 		247D7F9256439B497EDFAAE5D2EB40B5 /* map_present.png in Resources */ = {isa = PBXBuildFile; fileRef = C69E3607C1910A0334639B95EBCEA2A8 /* map_present.png */; };
-		2668FFB063C17E12FFA5E40ACA59A15E /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 418BB2DAB01B85D384C13E44A887F551 /* ViewController.swift */; };
 		3017B90A3E8A786129DB491C7E881781 /* map_pin@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 8B795F677188ED5279C2C645DECF22B8 /* map_pin@3x.png */; };
 		3383D9439DFBAA2AA03973A16189A94E /* Log.swift in Sources */ = {isa = PBXBuildFile; fileRef = D02E53BC08E53CBFB974F6CB03AF5916 /* Log.swift */; };
 		340B484ED07CEC91F5418CAD7CB3511C /* libsqlite3.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 2E70DA5B9552EDC769BE482E17EC5BA5 /* libsqlite3.tbd */; };
@@ -50,7 +64,6 @@
 		C8E006BB351A17532FE26125042A2A87 /* map_present_direction.png in Resources */ = {isa = PBXBuildFile; fileRef = 464BED299C4C8A9A8E138C1DD42714ED /* map_present_direction.png */; };
 		D0DFBAFCE884C5D7F3C10A9AC2A10F4C /* daum_copyright.png in Resources */ = {isa = PBXBuildFile; fileRef = 1FE71C718E9115188E664832FFE4FF97 /* daum_copyright.png */; };
 		D37E5355D9786BC6969C4A6E9A39D95C /* libc++.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 018076824BEEA4B63A86E4CCD41D22A0 /* libc++.tbd */; };
-		D6CE82F86B27008E2988F2759DE19168 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0ED8001DD4D908C87500F70544316BB5 /* Main.storyboard */; };
 		DCF7CF9C9F9E0BC4979CB7C9E8802428 /* shadow_balloon.png in Resources */ = {isa = PBXBuildFile; fileRef = 702A3DFADEE634450D2F707F7A97848F /* shadow_balloon.png */; };
 		DDB6EE2F4EFA983CE1E7AAA8F8668932 /* DaumMap.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F3017B962BE28C250563BCB6A1BFBD45 /* DaumMap.framework */; };
 		E43C60EF2361ED16E0BDC8974E5A80D0 /* detail_button.png in Resources */ = {isa = PBXBuildFile; fileRef = 9354F6FE478D82CD2C60C3CB89813304 /* detail_button.png */; };
@@ -65,7 +78,21 @@
 		018076824BEEA4B63A86E4CCD41D22A0 /* libc++.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = "libc++.tbd"; path = "usr/lib/libc++.tbd"; sourceTree = SDKROOT; };
 		09B7859F3606BD9FD5AAA0F651FDE8D9 /* Result+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Result+.swift"; sourceTree = "<group>"; };
 		0B7507E6565EF13E7FFD154D16D1804B /* map_present_background_update.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = map_present_background_update.png; sourceTree = "<group>"; };
-		0ED8001DD4D908C87500F70544316BB5 /* Main.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
+		19A965FD2387831A00AAC7D3 /* Visitor.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Visitor.storyboard; sourceTree = "<group>"; };
+		19A965FF238783D400AAC7D3 /* VisitorNameViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VisitorNameViewController.swift; sourceTree = "<group>"; };
+		19A96601238783DE00AAC7D3 /* VisitorStationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VisitorStationViewController.swift; sourceTree = "<group>"; };
+		19A96603238783FB00AAC7D3 /* VisitorFinishViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VisitorFinishViewController.swift; sourceTree = "<group>"; };
+		19A966052387843200AAC7D3 /* NSObject+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "NSObject+.swift"; sourceTree = "<group>"; };
+		19A96607238784B000AAC7D3 /* VisitorMainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VisitorMainViewController.swift; sourceTree = "<group>"; };
+		19F2B11A238FB980003ED01C /* Host.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Host.storyboard; sourceTree = "<group>"; };
+		19F2B11D238FB98A003ED01C /* Map.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Map.storyboard; sourceTree = "<group>"; };
+		19F2B11F238FBA2F003ED01C /* VisitorMainViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VisitorMainViewModel.swift; sourceTree = "<group>"; };
+		19F2B122238FBEB1003ED01C /* GigiViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GigiViewController.swift; sourceTree = "<group>"; };
+		19F2B124238FC14C003ED01C /* VisitorNameViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VisitorNameViewModel.swift; sourceTree = "<group>"; };
+		19F2B126238FC397003ED01C /* swiftgen.yml */ = {isa = PBXFileReference; lastKnownFileType = text.yaml; path = swiftgen.yml; sourceTree = "<group>"; };
+		19F2B128238FC3E8003ED01C /* Assets.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Assets.swift; sourceTree = "<group>"; };
+		19F2B129238FC3E8003ED01C /* Storyboard.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Storyboard.swift; sourceTree = "<group>"; };
+		19F2B12C238FC8A3003ED01C /* VisitorStationViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VisitorStationViewModel.swift; sourceTree = "<group>"; };
 		1BE116408B4BFC0AF39A926E553E2DB8 /* MTMapGeometry.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MTMapGeometry.h; sourceTree = "<group>"; };
 		1FE71C718E9115188E664832FFE4FF97 /* daum_copyright.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = daum_copyright.png; sourceTree = "<group>"; };
 		2113AA84E4694A88AD2A5B3B15846D61 /* th_line.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = th_line.png; sourceTree = "<group>"; };
@@ -77,7 +104,6 @@
 		2FFDCFD4B57FD23595435E997991B331 /* MTMapCircle.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MTMapCircle.h; sourceTree = "<group>"; };
 		3CA2A753AAA6F3EBEAD5490DB509B857 /* map_pin_red@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "map_pin_red@3x.png"; sourceTree = "<group>"; };
 		414679583E97BB07384EF73969748F4A /* map_pin_red.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = map_pin_red.png; sourceTree = "<group>"; };
-		418BB2DAB01B85D384C13E44A887F551 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		464BED299C4C8A9A8E138C1DD42714ED /* map_present_direction.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = map_present_direction.png; sourceTree = "<group>"; };
 		495EB218AD0C8461E368ACA1383F6C6C /* MTMapView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MTMapView.h; sourceTree = "<group>"; };
 		4BF28FA8AFDD0A199E3259BFE834B514 /* LocationService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationService.swift; sourceTree = "<group>"; };
@@ -151,22 +177,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		7CADB359813AD0C8A020F1B508392C9A = {
+		002AA99E93D0C62907A0E1262152CF35 /* ViewController */ = {
 			isa = PBXGroup;
 			children = (
-				F00BA8D9EE3CFA57981D09F5A69AEFE3 /* Frameworks */,
-				CFFB3A1737D8193214AF6D5281E1D279 /* Pods */,
-				FE9C2F11E8388C3C5E34DDE826931ACA /* Products */,
-				19591A7D5F45824A05320174EED9BF4B /* gigi */,
+				19F2B121238FBEA5003ED01C /* Base */,
+				19F2B11C238FB984003ED01C /* Map */,
+				19F2B119238FB975003ED01C /* Host */,
+				19A965FC2387831000AAC7D3 /* Visitor */,
 			);
-			sourceTree = "<group>";
-		};
-		FE9C2F11E8388C3C5E34DDE826931ACA /* Products */ = {
-			isa = PBXGroup;
-			children = (
-				2BB003C5ED0784D898EA9387BFCD2162 /* gigi.app */,
-			);
-			name = Products;
+			path = ViewController;
 			sourceTree = "<group>";
 		};
 		19591A7D5F45824A05320174EED9BF4B /* gigi */ = {
@@ -179,23 +198,76 @@
 			path = gigi;
 			sourceTree = "<group>";
 		};
-		F00BA8D9EE3CFA57981D09F5A69AEFE3 /* Frameworks */ = {
+		19A965FC2387831000AAC7D3 /* Visitor */ = {
 			isa = PBXGroup;
 			children = (
-				80311042244C0EEC704A97BC0472FDA1 /* CoreLocation.framework */,
-				389ADE03A9CCBA187289ED264ED30BA1 /* DaumMap.embeddedframework */,
-				AC9B9E1E37D5AE4D661480FEA15556CE /* KakaoCommon.framework */,
-				6E19368F6D46848990ABF27E0EFC4D6B /* KakaoLink.framework */,
-				FD8AFE9251FECD0CF2A5B6B9EF3363D9 /* KakaoMessageTemplate.framework */,
-				AB22F86949EBA4A2890B3B560E3C1D98 /* OpenGLES.framework */,
-				9F40FDE06DB803CBF6F0561C7EB7F2D6 /* Pods_gigi.framework */,
-				94658274BE4E2D1323DB8DD85FB85402 /* QuartzCore.framework */,
-				D6F84C0E1BC725054030BC941769D089 /* SystemConfiguration.framework */,
-				018076824BEEA4B63A86E4CCD41D22A0 /* libc++.tbd */,
-				2E70DA5B9552EDC769BE482E17EC5BA5 /* libsqlite3.tbd */,
-				59DA7519372C99BADADADB9B0FDBF67F /* libxml2.tbd */,
+				19A965FD2387831A00AAC7D3 /* Visitor.storyboard */,
+				19A96607238784B000AAC7D3 /* VisitorMainViewController.swift */,
+				19F2B11F238FBA2F003ED01C /* VisitorMainViewModel.swift */,
+				19A965FF238783D400AAC7D3 /* VisitorNameViewController.swift */,
+				19F2B124238FC14C003ED01C /* VisitorNameViewModel.swift */,
+				19A96601238783DE00AAC7D3 /* VisitorStationViewController.swift */,
+				19F2B12C238FC8A3003ED01C /* VisitorStationViewModel.swift */,
+				19A96603238783FB00AAC7D3 /* VisitorFinishViewController.swift */,
 			);
-			name = Frameworks;
+			path = Visitor;
+			sourceTree = "<group>";
+		};
+		19F2B119238FB975003ED01C /* Host */ = {
+			isa = PBXGroup;
+			children = (
+				19F2B11A238FB980003ED01C /* Host.storyboard */,
+			);
+			path = Host;
+			sourceTree = "<group>";
+		};
+		19F2B11C238FB984003ED01C /* Map */ = {
+			isa = PBXGroup;
+			children = (
+				19F2B11D238FB98A003ED01C /* Map.storyboard */,
+			);
+			path = Map;
+			sourceTree = "<group>";
+		};
+		19F2B121238FBEA5003ED01C /* Base */ = {
+			isa = PBXGroup;
+			children = (
+				19F2B122238FBEB1003ED01C /* GigiViewController.swift */,
+			);
+			path = Base;
+			sourceTree = "<group>";
+		};
+		1D878D87F85512A94F3E38785C338019 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				19F2B128238FC3E8003ED01C /* Assets.swift */,
+				19F2B129238FC3E8003ED01C /* Storyboard.swift */,
+				BBAFDA1D35BE06E8877556912F34B1D9 /* Assets.xcassets */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		33FA880B728F1532F308F78B7F288136 /* Sources */ = {
+			isa = PBXGroup;
+			children = (
+				E94BDBB3F3E8733A6F37DBFE26C51FB5 /* Common */,
+				EA55D37305884ABBAC02281AD40E1C19 /* Extension */,
+				370AE5E3BCAACB5ACBE75BB5E479A4AA /* KakaoAPI */,
+				96045367948C0257452147BE53D4F3FE /* Service */,
+				5042FA42DD4D0E79A7C45D67C4AF71FE /* View */,
+				002AA99E93D0C62907A0E1262152CF35 /* ViewController */,
+				EBCF9345C4AE31338BAAAC7790E01C58 /* AppDelegate.swift */,
+			);
+			path = Sources;
+			sourceTree = "<group>";
+		};
+		370AE5E3BCAACB5ACBE75BB5E479A4AA /* KakaoAPI */ = {
+			isa = PBXGroup;
+			children = (
+				F34FABB5318195E55BA90A89B90F39B1 /* KakaoPlaceCategory.swift */,
+				AC86DBC5732CEC286CA370649339C257 /* KakaoSearchByCategoryResponse.swift */,
+			);
+			path = KakaoAPI;
 			sourceTree = "<group>";
 		};
 		389ADE03A9CCBA187289ED264ED30BA1 /* DaumMap.embeddedframework */ = {
@@ -205,6 +277,48 @@
 				F3017B962BE28C250563BCB6A1BFBD45 /* DaumMap.framework */,
 			);
 			path = DaumMap.embeddedframework;
+			sourceTree = "<group>";
+		};
+		5042FA42DD4D0E79A7C45D67C4AF71FE /* View */ = {
+			isa = PBXGroup;
+			children = (
+				ED5473A48E3418F08F464DC2DB2ABB73 /* KakaoMapView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		7BFAF3B77C957D7DD40E78A55B274011 /* Headers */ = {
+			isa = PBXGroup;
+			children = (
+				549E26881DC6FB5646074BFBCFC62BB3 /* MTMapCameraUpdate.h */,
+				2FFDCFD4B57FD23595435E997991B331 /* MTMapCircle.h */,
+				1BE116408B4BFC0AF39A926E553E2DB8 /* MTMapGeometry.h */,
+				67BA959AF48C4D6A6E371545EB1E2B20 /* MTMapLocationMarkerItem.h */,
+				96845CDB2EE125D8E3CC097D2F7E5E97 /* MTMapPOIItem.h */,
+				713FA06474B48B524327DA636C6E96AE /* MTMapPolyline.h */,
+				808082B13D6EA90BA72B05185ACF4F20 /* MTMapReverseGeoCoder.h */,
+				495EB218AD0C8461E368ACA1383F6C6C /* MTMapView.h */,
+			);
+			path = Headers;
+			sourceTree = "<group>";
+		};
+		7CADB359813AD0C8A020F1B508392C9A = {
+			isa = PBXGroup;
+			children = (
+				19F2B126238FC397003ED01C /* swiftgen.yml */,
+				F00BA8D9EE3CFA57981D09F5A69AEFE3 /* Frameworks */,
+				CFFB3A1737D8193214AF6D5281E1D279 /* Pods */,
+				FE9C2F11E8388C3C5E34DDE826931ACA /* Products */,
+				19591A7D5F45824A05320174EED9BF4B /* gigi */,
+			);
+			sourceTree = "<group>";
+		};
+		96045367948C0257452147BE53D4F3FE /* Service */ = {
+			isa = PBXGroup;
+			children = (
+				4BF28FA8AFDD0A199E3259BFE834B514 /* LocationService.swift */,
+			);
+			path = Service;
 			sourceTree = "<group>";
 		};
 		A2A2A6B79116435D999DB86117C55D1B /* Resources */ = {
@@ -243,41 +357,30 @@
 			path = Resources;
 			sourceTree = "<group>";
 		};
-		7BFAF3B77C957D7DD40E78A55B274011 /* Headers */ = {
+		CFFB3A1737D8193214AF6D5281E1D279 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
-				549E26881DC6FB5646074BFBCFC62BB3 /* MTMapCameraUpdate.h */,
-				2FFDCFD4B57FD23595435E997991B331 /* MTMapCircle.h */,
-				1BE116408B4BFC0AF39A926E553E2DB8 /* MTMapGeometry.h */,
-				67BA959AF48C4D6A6E371545EB1E2B20 /* MTMapLocationMarkerItem.h */,
-				96845CDB2EE125D8E3CC097D2F7E5E97 /* MTMapPOIItem.h */,
-				713FA06474B48B524327DA636C6E96AE /* MTMapPolyline.h */,
-				808082B13D6EA90BA72B05185ACF4F20 /* MTMapReverseGeoCoder.h */,
-				495EB218AD0C8461E368ACA1383F6C6C /* MTMapView.h */,
+				D9DF36010BEECA07E1A018DBEBCB5576 /* Pods-gigi.debug.xcconfig */,
+				2925A7B9682F3DCFCD77A171DA8532CD /* Pods-gigi.release.xcconfig */,
 			);
-			path = Headers;
+			path = Pods;
 			sourceTree = "<group>";
 		};
-		1D878D87F85512A94F3E38785C338019 /* Resources */ = {
+		E94BDBB3F3E8733A6F37DBFE26C51FB5 /* Common */ = {
 			isa = PBXGroup;
 			children = (
-				BBAFDA1D35BE06E8877556912F34B1D9 /* Assets.xcassets */,
+				D02E53BC08E53CBFB974F6CB03AF5916 /* Log.swift */,
 			);
-			path = Resources;
+			path = Common;
 			sourceTree = "<group>";
 		};
-		33FA880B728F1532F308F78B7F288136 /* Sources */ = {
+		EA55D37305884ABBAC02281AD40E1C19 /* Extension */ = {
 			isa = PBXGroup;
 			children = (
-				E94BDBB3F3E8733A6F37DBFE26C51FB5 /* Common */,
-				EA55D37305884ABBAC02281AD40E1C19 /* Extension */,
-				370AE5E3BCAACB5ACBE75BB5E479A4AA /* KakaoAPI */,
-				96045367948C0257452147BE53D4F3FE /* Service */,
-				5042FA42DD4D0E79A7C45D67C4AF71FE /* View */,
-				002AA99E93D0C62907A0E1262152CF35 /* ViewController */,
-				EBCF9345C4AE31338BAAAC7790E01C58 /* AppDelegate.swift */,
+				09B7859F3606BD9FD5AAA0F651FDE8D9 /* Result+.swift */,
+				19A966052387843200AAC7D3 /* NSObject+.swift */,
 			);
-			path = Sources;
+			path = Extension;
 			sourceTree = "<group>";
 		};
 		EEAE13580BB033DCB4F528A707443460 /* Supports */ = {
@@ -290,63 +393,31 @@
 			path = Supports;
 			sourceTree = "<group>";
 		};
-		370AE5E3BCAACB5ACBE75BB5E479A4AA /* KakaoAPI */ = {
+		F00BA8D9EE3CFA57981D09F5A69AEFE3 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				F34FABB5318195E55BA90A89B90F39B1 /* KakaoPlaceCategory.swift */,
-				AC86DBC5732CEC286CA370649339C257 /* KakaoSearchByCategoryResponse.swift */,
+				80311042244C0EEC704A97BC0472FDA1 /* CoreLocation.framework */,
+				389ADE03A9CCBA187289ED264ED30BA1 /* DaumMap.embeddedframework */,
+				AC9B9E1E37D5AE4D661480FEA15556CE /* KakaoCommon.framework */,
+				6E19368F6D46848990ABF27E0EFC4D6B /* KakaoLink.framework */,
+				FD8AFE9251FECD0CF2A5B6B9EF3363D9 /* KakaoMessageTemplate.framework */,
+				AB22F86949EBA4A2890B3B560E3C1D98 /* OpenGLES.framework */,
+				9F40FDE06DB803CBF6F0561C7EB7F2D6 /* Pods_gigi.framework */,
+				94658274BE4E2D1323DB8DD85FB85402 /* QuartzCore.framework */,
+				D6F84C0E1BC725054030BC941769D089 /* SystemConfiguration.framework */,
+				018076824BEEA4B63A86E4CCD41D22A0 /* libc++.tbd */,
+				2E70DA5B9552EDC769BE482E17EC5BA5 /* libsqlite3.tbd */,
+				59DA7519372C99BADADADB9B0FDBF67F /* libxml2.tbd */,
 			);
-			path = KakaoAPI;
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		E94BDBB3F3E8733A6F37DBFE26C51FB5 /* Common */ = {
+		FE9C2F11E8388C3C5E34DDE826931ACA /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				D02E53BC08E53CBFB974F6CB03AF5916 /* Log.swift */,
+				2BB003C5ED0784D898EA9387BFCD2162 /* gigi.app */,
 			);
-			path = Common;
-			sourceTree = "<group>";
-		};
-		5042FA42DD4D0E79A7C45D67C4AF71FE /* View */ = {
-			isa = PBXGroup;
-			children = (
-				ED5473A48E3418F08F464DC2DB2ABB73 /* KakaoMapView.swift */,
-			);
-			path = View;
-			sourceTree = "<group>";
-		};
-		96045367948C0257452147BE53D4F3FE /* Service */ = {
-			isa = PBXGroup;
-			children = (
-				4BF28FA8AFDD0A199E3259BFE834B514 /* LocationService.swift */,
-			);
-			path = Service;
-			sourceTree = "<group>";
-		};
-		EA55D37305884ABBAC02281AD40E1C19 /* Extension */ = {
-			isa = PBXGroup;
-			children = (
-				09B7859F3606BD9FD5AAA0F651FDE8D9 /* Result+.swift */,
-			);
-			path = Extension;
-			sourceTree = "<group>";
-		};
-		002AA99E93D0C62907A0E1262152CF35 /* ViewController */ = {
-			isa = PBXGroup;
-			children = (
-				0ED8001DD4D908C87500F70544316BB5 /* Main.storyboard */,
-				418BB2DAB01B85D384C13E44A887F551 /* ViewController.swift */,
-			);
-			path = ViewController;
-			sourceTree = "<group>";
-		};
-		CFFB3A1737D8193214AF6D5281E1D279 /* Pods */ = {
-			isa = PBXGroup;
-			children = (
-				D9DF36010BEECA07E1A018DBEBCB5576 /* Pods-gigi.debug.xcconfig */,
-				2925A7B9682F3DCFCD77A171DA8532CD /* Pods-gigi.release.xcconfig */,
-			);
-			path = Pods;
+			name = Products;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -411,11 +482,13 @@
 			files = (
 				B26BE6838D4797799BBA9716705D9E96 /* Assets.xcassets in Resources */,
 				C2E48C8805136B3655D170D1E3E6AF7A /* LaunchScreen.storyboard in Resources */,
-				D6CE82F86B27008E2988F2759DE19168 /* Main.storyboard in Resources */,
 				ABF4B7445E70B80966F4F233944C2A96 /* copyright.png in Resources */,
+				19F2B11B238FB980003ED01C /* Host.storyboard in Resources */,
 				D0DFBAFCE884C5D7F3C10A9AC2A10F4C /* daum_copyright.png in Resources */,
+				19A965FE2387831A00AAC7D3 /* Visitor.storyboard in Resources */,
 				02A8677C3D7611B25465A5269E398E79 /* daum_th_line.png in Resources */,
 				E43C60EF2361ED16E0BDC8974E5A80D0 /* detail_button.png in Resources */,
+				19F2B127238FC397003ED01C /* swiftgen.yml in Resources */,
 				8714F5E80EB1F930470FFF2BCF0BF4BF /* info_box.png in Resources */,
 				B211FB64483899C2748295915A8C4040 /* info_box_tail.png in Resources */,
 				A75B222F9371511CEEC34A94169DBAA5 /* map_pin.png in Resources */,
@@ -436,6 +509,7 @@
 				07DDD7A452E3C06C655E7EC948C4400D /* map_present_tracking.png in Resources */,
 				725457981379AEADC85C5C43BEF61C5B /* noimage.png in Resources */,
 				E452BD81625D7C65B9F8EB513DFD6FA4 /* noimage256.png in Resources */,
+				19F2B11E238FB98A003ED01C /* Map.storyboard in Resources */,
 				3B125169E5210E025AF1C335B9A82CDA /* point_sprite.png in Resources */,
 				DCF7CF9C9F9E0BC4979CB7C9E8802428 /* shadow_balloon.png in Resources */,
 				B9B945462F3842A3F24AEF7192BC66EA /* th_line.png in Resources */,
@@ -492,19 +566,93 @@
 			buildActionMask = 2147483647;
 			files = (
 				FD0C7AF2C852E38B8290348B3F19127E /* AppDelegate.swift in Sources */,
+				19A966062387843200AAC7D3 /* NSObject+.swift in Sources */,
+				19F2B125238FC14C003ED01C /* VisitorNameViewModel.swift in Sources */,
 				C4C3A59991BD5520DA7A8320E2CCD539 /* KakaoMapView.swift in Sources */,
 				1087A72C42C029C0D02EB65BFDED13FA /* KakaoPlaceCategory.swift in Sources */,
 				792D417A35A2AA2A08CF898A8B618FF2 /* KakaoSearchByCategoryResponse.swift in Sources */,
+				19F2B12A238FC3E8003ED01C /* Assets.swift in Sources */,
+				19F2B123238FBEB1003ED01C /* GigiViewController.swift in Sources */,
 				80F7E4E400032F853EBA11CD77578008 /* LocationService.swift in Sources */,
+				19A96600238783D400AAC7D3 /* VisitorNameViewController.swift in Sources */,
+				19A96604238783FB00AAC7D3 /* VisitorFinishViewController.swift in Sources */,
+				19F2B120238FBA2F003ED01C /* VisitorMainViewModel.swift in Sources */,
+				19A96602238783DE00AAC7D3 /* VisitorStationViewController.swift in Sources */,
+				19A96608238784B000AAC7D3 /* VisitorMainViewController.swift in Sources */,
 				3383D9439DFBAA2AA03973A16189A94E /* Log.swift in Sources */,
 				194CB58C2580B4ED21B304786D1C5B28 /* Result+.swift in Sources */,
-				2668FFB063C17E12FFA5E40ACA59A15E /* ViewController.swift in Sources */,
+				19F2B12D238FC8A3003ED01C /* VisitorStationViewModel.swift in Sources */,
+				19F2B12B238FC3E8003ED01C /* Storyboard.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin XCBuildConfiguration section */
+		877C4D711AB5EBE378AA3EAD03B4D00A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = D9DF36010BEECA07E1A018DBEBCB5576 /* Pods-gigi.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_OBJC_ARC = NO;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = H79MF628K3;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/DaumMap.embeddedframework",
+					"$(PROJECT_DIR)",
+				);
+				INFOPLIST_FILE = gigi/Supports/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/DaumMap.embeddedframework/Resources",
+				);
+				MARKETING_VERSION = 1.0.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.ddd.gigi;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "/Users/presto/Developer/Xcode/gigi/gigi/Supports/gigi-bridge.h";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Debug;
+		};
+		8E081E605914FC94D4CA2492F053274C /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2925A7B9682F3DCFCD77A171DA8532CD /* Pods-gigi.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_OBJC_ARC = NO;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = H79MF628K3;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/DaumMap.embeddedframework",
+					"$(PROJECT_DIR)",
+				);
+				INFOPLIST_FILE = gigi/Supports/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/DaumMap.embeddedframework/Resources",
+				);
+				MARKETING_VERSION = 1.0.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.ddd.gigi;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "/Users/presto/Developer/Xcode/gigi/gigi/Supports/gigi-bridge.h";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Release;
+		};
 		EDBEDDCF309C1CA5ABB20416322271C0 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -616,70 +764,6 @@
 				SWIFT_COMPILATION_MODE = wholemodule;
 				SWIFT_OPTIMIZATION_LEVEL = "-O";
 				VALIDATE_PRODUCT = YES;
-			};
-			name = Release;
-		};
-		877C4D711AB5EBE378AA3EAD03B4D00A /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = D9DF36010BEECA07E1A018DBEBCB5576 /* Pods-gigi.debug.xcconfig */;
-			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CLANG_ENABLE_OBJC_ARC = NO;
-				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = H79MF628K3;
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(inherited)",
-					"$(PROJECT_DIR)/DaumMap.embeddedframework",
-					"$(PROJECT_DIR)",
-				);
-				INFOPLIST_FILE = gigi/Supports/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-				);
-				LIBRARY_SEARCH_PATHS = (
-					"$(inherited)",
-					"$(PROJECT_DIR)/DaumMap.embeddedframework/Resources",
-				);
-				MARKETING_VERSION = 1.0.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.ddd.gigi;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_OBJC_BRIDGING_HEADER = "/Users/presto/Developer/Xcode/gigi/gigi/Supports/gigi-bridge.h";
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = 1;
-			};
-			name = Debug;
-		};
-		8E081E605914FC94D4CA2492F053274C /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 2925A7B9682F3DCFCD77A171DA8532CD /* Pods-gigi.release.xcconfig */;
-			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CLANG_ENABLE_OBJC_ARC = NO;
-				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = H79MF628K3;
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(inherited)",
-					"$(PROJECT_DIR)/DaumMap.embeddedframework",
-					"$(PROJECT_DIR)",
-				);
-				INFOPLIST_FILE = gigi/Supports/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-				);
-				LIBRARY_SEARCH_PATHS = (
-					"$(inherited)",
-					"$(PROJECT_DIR)/DaumMap.embeddedframework/Resources",
-				);
-				MARKETING_VERSION = 1.0.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.ddd.gigi;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_OBJC_BRIDGING_HEADER = "/Users/presto/Developer/Xcode/gigi/gigi/Supports/gigi-bridge.h";
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};

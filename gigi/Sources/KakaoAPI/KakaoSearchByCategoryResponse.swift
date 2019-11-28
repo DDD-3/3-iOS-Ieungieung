@@ -10,13 +10,10 @@ import Foundation
 
 /// `카테고리로 장소 검색` 응답 모델.
 struct KakaoSearchByCategoryResponse: Decodable {
-
   /// 응답 메타 데이터.
   struct Meta: Decodable {
-
     /// 질의어의 지역 및 키워드 분석 정보.
     struct SameName: Decodable {
-
       /// 질의어에서 인식된 지역의 리스트.
       let region: [String]
 
@@ -27,7 +24,6 @@ struct KakaoSearchByCategoryResponse: Decodable {
       let selectedRegion: String
 
       private enum CodingKeys: String, CodingKey {
-
         case region
 
         case keyword
@@ -49,7 +45,6 @@ struct KakaoSearchByCategoryResponse: Decodable {
     let sameName: SameName?
 
     private enum CodingKeys: String, CodingKey {
-
       case totalCount = "total_count"
 
       case isEnd = "is_end"
@@ -62,7 +57,6 @@ struct KakaoSearchByCategoryResponse: Decodable {
 
   /// 응답 결과 문서.
   struct Document: Decodable {
-
     /// 장소 ID.
     let id: String
 
@@ -100,7 +94,6 @@ struct KakaoSearchByCategoryResponse: Decodable {
     let distance: Int
 
     private enum CodingKeys: String, CodingKey {
-
       case id
 
       case placeName = "place_name"

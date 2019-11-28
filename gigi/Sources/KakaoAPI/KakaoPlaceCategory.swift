@@ -10,7 +10,6 @@
 ///
 /// 원시 값은 kakao REST API가 제공하는 그룹 코드를 의미한다.
 enum KakaoPlaceCategory: String {
-
   /// 대형마트.
   case mart = "MT1"
 

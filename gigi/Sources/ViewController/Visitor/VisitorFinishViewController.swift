@@ -1,5 +1,5 @@
 //
-//  ViewController.swift
+//  VisitorFinishViewController.swift
 //  gigi
 //
 //  Created by Presto on 2019/11/22.
@@ -8,11 +8,8 @@
 
 import UIKit
 
-final class ViewController: UIViewController {
+final class VisitorFinishViewController: UIViewController {
   override func viewDidLoad() {
     super.viewDidLoad()
-    let mapView = KakaoMapView()
-    mapView.frame = view.bounds
-    view.addSubview(mapView)
   }
 }

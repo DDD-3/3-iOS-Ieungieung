@@ -1,0 +1,11 @@
+xcassets:
+  inputs: gigi/Resources/Assets.xcassets
+  outputs:
+    templateName: swift4
+    output: gigi/Resources/Assets.swift
+
+ib:
+  inputs: gigi
+  outputs:
+    templateName: scenes-swift4
+    output: gigi/Resources/Storyboard.swift

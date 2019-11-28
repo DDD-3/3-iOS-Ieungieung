@@ -5,5 +5,8 @@ target 'gigi' do
 
   pod 'Then'
   pod 'SnapKit'
-
+  pod 'RxSwift'
+  pod 'RxCocoa'
+  pod 'RxOptional'
+  pod 'RxViewController'
 end
