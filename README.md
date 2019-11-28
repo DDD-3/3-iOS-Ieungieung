@@ -72,6 +72,34 @@
 
 ## 기타
 
+### swiftgen
+
+에셋과 스토리보드에 대하여 코드를 만들어 줍니다.
+
+새로운 에셋이나 스토리보드를 추가할 때마다 다음의 명령어를 프로젝트 루트 디렉토리에서 실행해 주세요.
+
+```swift
+swiftgen config run
+```
+
+그러면 에셋에는 다음과 같은 코드로 접근할 수 있습니다.
+
+```swift
+// 이미지
+Asset.someImage.image
+// 색상
+Asset.someColor.color
+```
+
+스토리보드(View Controller)에는 다음과 같은 코드로 접근할 수 있습니다.
+
+```swift
+// Main 스토리보드의 initial view controller
+StoryboardScene.Main.initial.instantiate()
+// Main 스토리보드의 MainViewController view controller
+StoryboardScene.Main.mainViewController.instantiate()
+```
+
 ### git pre-commit
 
 `./.git/hooks/pre-commit` 파일에 의해 커밋할 때 해당 파일에 기록된 명령이 실행됩니다.
