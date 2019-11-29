@@ -1,5 +1,5 @@
 //
-//  SearchSTNBySubwayResponse.swift
+//  StationSearchBySubwayResponse.swift
 //  gigi
 //
 //  Created by BLU on 28/11/2019.
@@ -11,7 +11,7 @@ import Foundation
 /// 서울특별시 노선별 지하철역 정보.
 ///
 /// `지하철 역 검색` 응답 모델.
-struct SearchSTNBySubwayResponse: Decodable {
+struct StationSearchBySubwayResponse: Decodable {
   /// 지하철 역 정보 데이터.
   struct SubwayLineInfo: Decodable {
     /// 응답 결과 데이터.
