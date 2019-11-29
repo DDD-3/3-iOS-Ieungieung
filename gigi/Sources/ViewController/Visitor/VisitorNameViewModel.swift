@@ -9,7 +9,15 @@
 import RxRelay
 import RxSwift
 
-protocol VisitorNameViewModelInputs {
+// MARK: - 명세
+
+protocol VisitorNameViewModelProtocol {
+  var input: VisitorNameViewModelInputProtocol { get }
+
+  var output: VisitorNameViewModelOutputProtocol { get }
+}
+
+protocol VisitorNameViewModelInputProtocol {
   func inputName(_ name: String)
 
   func finishNameInput()
@@ -17,11 +25,13 @@ protocol VisitorNameViewModelInputs {
   func pushNextViewController()
 }
 
-protocol VisitorNameViewModelOutputs {
+protocol VisitorNameViewModelOutputProtocol {
   var isNameInputFinished: Observable<Void> { get }
 
   var isNextButtonTapped: Observable<Void> { get }
 }
+
+// MARK: - 구현
 
 final class VisitorNameViewModel {
   private let nameRelay = BehaviorRelay<String?>(value: nil)
@@ -31,7 +41,13 @@ final class VisitorNameViewModel {
   private let isNextButtonTappedRelay = BehaviorRelay<Void?>(value: nil)
 }
 
-extension VisitorNameViewModel: VisitorNameViewModelInputs {
+extension VisitorNameViewModel: VisitorNameViewModelProtocol {
+  var input: VisitorNameViewModelInputProtocol { return self }
+
+  var output: VisitorNameViewModelOutputProtocol { return self }
+}
+
+extension VisitorNameViewModel: VisitorNameViewModelInputProtocol {
   func inputName(_ name: String) {
     nameRelay.accept(name)
   }
@@ -45,7 +61,7 @@ extension VisitorNameViewModel: VisitorNameViewModelInputs {
   }
 }
 
-extension VisitorNameViewModel: VisitorNameViewModelOutputs {
+extension VisitorNameViewModel: VisitorNameViewModelOutputProtocol {
   var isNameInputFinished: Observable<Void> {
     return isNameInputFinishedRelay.compactMap { $0 }
   }

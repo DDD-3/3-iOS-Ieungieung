@@ -15,8 +15,9 @@ final class VisitorStationViewController: GigiViewController {
   @IBOutlet private var nearStationNameTextField: GigiTextField!
   @IBOutlet private var backStationNameTextField: GigiTextField!
   private var nextButton = UIBarButtonItem()
+  private var tapGestureRecognizer = UITapGestureRecognizer()
 
-  private let viewModel = VisitorStationViewModel()
+  var viewModel: VisitorStationViewModelProtocol!
 
   override func setup() {
     nextButton.title = "다음"
@@ -24,18 +25,25 @@ final class VisitorStationViewController: GigiViewController {
     navigationItem.setRightBarButton(nextButton, animated: false)
   }
 
-  override func bind() {
+  override func bindViewModelInputs() {
+    tapGestureRecognizer.rx.event
+      .filter { $0.state == .ended }
+      .subscribe(onNext: { [weak self] _ in
+        self?.viewModel.input.finishStationNameInput()
+      })
+      .disposed(by: disposeBag)
+
     nearStationNameTextField.rx.text
       .compactMap { $0 }
       .subscribe(onNext: { [weak self] text in
-        self?.viewModel.inputNearStationName(text)
+        self?.viewModel.input.inputNearStationName(text)
       })
       .disposed(by: disposeBag)
 
     backStationNameTextField.rx.text
       .compactMap { $0 }
       .subscribe(onNext: { [weak self] text in
-        self?.viewModel.inputBackStationName(text)
+        self?.viewModel.input.inputBackStationName(text)
       })
       .disposed(by: disposeBag)
 
@@ -45,24 +53,26 @@ final class VisitorStationViewController: GigiViewController {
         backStationNameTextField.rx.editingDidEndOnExit.asObservable(),
       ])
       .subscribe(onNext: { [weak self] _ in
-        self?.viewModel.finishStationNameInput()
+        self?.viewModel.input.finishStationNameInput()
       })
       .disposed(by: disposeBag)
 
     nextButton.rx.tap
       .subscribe(onNext: { [weak self] _ in
-        self?.viewModel.pushNextViewController()
+        self?.viewModel.input.pushNextViewController()
       })
       .disposed(by: disposeBag)
+  }
 
-    viewModel.isStationNameInputFinished
+  override func bindViewModelOutputs() {
+    viewModel.output.isStationNameInputFinished
       .subscribe(onNext: { [weak self] _ in
         self?.nearStationNameTextField.resignFirstResponder()
         self?.backStationNameTextField.resignFirstResponder()
       })
       .disposed(by: disposeBag)
 
-    viewModel.isNextButtonTapped
+    viewModel.output.isNextButtonTapped
       .map { StoryboardScene.Visitor.visitorFinishViewController.instantiate() }
       .subscribe(onNext: { [weak self] in
         self?.navigationController?.pushViewController($0, animated: true)

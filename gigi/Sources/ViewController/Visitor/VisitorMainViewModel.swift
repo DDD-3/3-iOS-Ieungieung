@@ -9,25 +9,41 @@
 import RxRelay
 import RxSwift
 
-protocol VisitorMainViewModelInputs {
+// MARK: - 명세
+
+protocol VisitorMainViewModelProtocol {
+  var input: VisitorMainViewModelInputProtocol { get }
+
+  var output: VisitorMainViewModelOutputProtocol { get }
+}
+
+protocol VisitorMainViewModelInputProtocol {
   func pushNextViewController()
 }
 
-protocol VisitorMainViewModelOutputs {
+protocol VisitorMainViewModelOutputProtocol {
   var isNextButtonTapped: Observable<Void> { get }
 }
+
+// MARK: - 구현
 
 final class VisitorMainViewModel {
   private let isNextButtonTappedSubject = BehaviorRelay<Void?>(value: nil)
 }
 
-extension VisitorMainViewModel: VisitorMainViewModelInputs {
+extension VisitorMainViewModel: VisitorMainViewModelProtocol {
+  var input: VisitorMainViewModelInputProtocol { return self }
+
+  var output: VisitorMainViewModelOutputProtocol { return self }
+}
+
+extension VisitorMainViewModel: VisitorMainViewModelInputProtocol {
   func pushNextViewController() {
     isNextButtonTappedSubject.accept(Void())
   }
 }
 
-extension VisitorMainViewModel: VisitorMainViewModelOutputs {
+extension VisitorMainViewModel: VisitorMainViewModelOutputProtocol {
   var isNextButtonTapped: Observable<Void> {
     return isNextButtonTappedSubject.compactMap { $0 }
   }

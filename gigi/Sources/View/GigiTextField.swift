@@ -40,6 +40,12 @@ final class GigiTextField: UIView {
     self.init(frame: .zero)
     self.placeholder = placeholder
   }
+
+  @discardableResult
+  override func resignFirstResponder() -> Bool {
+    textField.resignFirstResponder()
+    return super.resignFirstResponder()
+  }
 }
 
 // MARK: - Private Method
@@ -83,11 +89,5 @@ extension Reactive where Base: GigiTextField {
 
   var editingDidEndOnExit: ControlEvent<Void> {
     return base.textField.rx.controlEvent(.editingDidEndOnExit)
-  }
-
-  var textInput: Binder<String?> {
-    return .init(base) { target, text in
-      target.textField.text = text
-    }
   }
 }

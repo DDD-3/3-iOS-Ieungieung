@@ -9,12 +9,24 @@
 import RxRelay
 import RxSwift
 
-protocol VisitorFinishViewModelInputs {}
+protocol VisitorFinishViewModelProtocol {
+  var input: VisitorFinishViewModelInputProtocol { get }
 
-protocol VisitorFinishViewModelOutputs {}
+  var output: VisitorFinishViewModelOutputProtocol { get }
+}
+
+protocol VisitorFinishViewModelInputProtocol {}
+
+protocol VisitorFinishViewModelOutputProtocol {}
 
 final class VisitorFinishViewModel {}
 
-extension VisitorFinishViewModel: VisitorFinishViewModelInputs {}
+extension VisitorFinishViewModel: VisitorFinishViewModelProtocol {
+  var input: VisitorFinishViewModelInputProtocol { return self }
 
-extension VisitorFinishViewModel: VisitorFinishViewModelOutputs {}
+  var output: VisitorFinishViewModelOutputProtocol { return self }
+}
+
+extension VisitorFinishViewModel: VisitorFinishViewModelInputProtocol {}
+
+extension VisitorFinishViewModel: VisitorFinishViewModelOutputProtocol {}
