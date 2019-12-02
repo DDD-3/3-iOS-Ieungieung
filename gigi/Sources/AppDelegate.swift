@@ -19,11 +19,19 @@ final class AppDelegate: UIResponder, UIApplicationDelegate {
 
   func application(_ application: UIApplication,
                    didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
+    window = .init()
+
     UINavigationBar.appearance().do {
       $0.setBackgroundImage(.init(), for: .default)
       $0.shadowImage = .init()
       $0.isTranslucent = true
     }
+
+    let rootViewController = StoryboardScene.Visitor.initialScene.instantiate().then {
+      ($0.topViewController as? VisitorMainViewController)?.viewModel = VisitorMainViewModel()
+    }
+    window?.rootViewController = rootViewController
+    window?.makeKeyAndVisible()
     return true
   }
 }

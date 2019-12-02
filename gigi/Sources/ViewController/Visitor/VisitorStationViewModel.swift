@@ -9,7 +9,15 @@
 import RxRelay
 import RxSwift
 
-protocol VisitorStationViewModelInputs {
+// MARK: - 명세
+
+protocol VisitorStationViewModelProtocol {
+  var input: VisitorStationViewModelInputProtocol { get }
+
+  var output: VisitorStationViewModelOutputProtocol { get }
+}
+
+protocol VisitorStationViewModelInputProtocol {
   func inputNearStationName(_ name: String)
 
   func inputBackStationName(_ name: String)
@@ -19,11 +27,13 @@ protocol VisitorStationViewModelInputs {
   func pushNextViewController()
 }
 
-protocol VisitorStationViewModelOutputs {
+protocol VisitorStationViewModelOutputProtocol {
   var isStationNameInputFinished: Observable<Void> { get }
 
   var isNextButtonTapped: Observable<Void> { get }
 }
+
+// MARK: - 구현
 
 final class VisitorStationViewModel {
   private let nearStationNameRelay = BehaviorRelay<String?>(value: nil)
@@ -35,7 +45,13 @@ final class VisitorStationViewModel {
   private let isNextButtonTappedRelay = BehaviorRelay<Void?>(value: nil)
 }
 
-extension VisitorStationViewModel: VisitorStationViewModelInputs {
+extension VisitorStationViewModel: VisitorStationViewModelProtocol {
+  var input: VisitorStationViewModelInputProtocol { return self }
+
+  var output: VisitorStationViewModelOutputProtocol { return self }
+}
+
+extension VisitorStationViewModel: VisitorStationViewModelInputProtocol {
   func inputNearStationName(_ name: String) {
     nearStationNameRelay.accept(name)
   }
@@ -53,7 +69,7 @@ extension VisitorStationViewModel: VisitorStationViewModelInputs {
   }
 }
 
-extension VisitorStationViewModel: VisitorStationViewModelOutputs {
+extension VisitorStationViewModel: VisitorStationViewModelOutputProtocol {
   var isStationNameInputFinished: Observable<Void> {
     return isStationNameInputFinishedRelay.compactMap { $0 }
   }

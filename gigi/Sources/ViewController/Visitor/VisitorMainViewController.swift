@@ -13,18 +13,29 @@ import RxSwift
 
 final class VisitorMainViewController: GigiViewController {
   @IBOutlet private var nextButton: UIButton!
+  private let tapGestureRecognizer = UITapGestureRecognizer()
 
-  private let viewModel = VisitorMainViewModel()
+  var viewModel: VisitorMainViewModelProtocol!
 
-  override func bind() {
+  override func setup() {
+    navigationItem.backBarButtonItem = .init()
+  }
+
+  override func bindViewModelInputs() {
     nextButton.rx.tap
       .subscribe(onNext: { [weak self] _ in
-        self?.viewModel.pushNextViewController()
+        self?.viewModel.input.pushNextViewController()
       })
       .disposed(by: disposeBag)
+  }
 
-    viewModel.isNextButtonTapped
-      .map { StoryboardScene.Visitor.visitorNameViewController.instantiate() }
+  override func bindViewModelOutputs() {
+    viewModel.output.isNextButtonTapped
+      .map {
+        StoryboardScene.Visitor.visitorNameViewController.instantiate().then {
+          $0.viewModel = VisitorNameViewModel()
+        }
+      }
       .subscribe(onNext: { [weak self] in
         self?.navigationController?.pushViewController($0, animated: true)
       })

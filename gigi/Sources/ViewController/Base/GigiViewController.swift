@@ -16,10 +16,13 @@ class GigiViewController: UIViewController {
   override func viewDidLoad() {
     super.viewDidLoad()
     setup()
-    bind()
+    bindViewModelInputs()
+    bindViewModelOutputs()
   }
 
   func setup() {}
 
-  func bind() {}
+  func bindViewModelInputs() {}
+
+  func bindViewModelOutputs() {}
 }
