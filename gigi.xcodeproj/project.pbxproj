@@ -13,6 +13,10 @@
 		08A60E96203450FDCA65CFA81A280D40 /* map_pinup_custom.png in Resources */ = {isa = PBXBuildFile; fileRef = 0014A685BEFE438A55E67987AADFED49 /* map_pinup_custom.png */; };
 		1087A72C42C029C0D02EB65BFDED13FA /* KakaoPlaceCategory.swift in Sources */ = {isa = PBXBuildFile; fileRef = F34FABB5318195E55BA90A89B90F39B1 /* KakaoPlaceCategory.swift */; };
 		194CB58C2580B4ED21B304786D1C5B28 /* Result+.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09B7859F3606BD9FD5AAA0F651FDE8D9 /* Result+.swift */; };
+		194F1BBC239533AA00F95A6E /* MapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 194F1BBB239533AA00F95A6E /* MapViewController.swift */; };
+		194F1BBE239533B000F95A6E /* MapViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 194F1BBD239533B000F95A6E /* MapViewModel.swift */; };
+		194F1BC02395377D00F95A6E /* ParticipationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 194F1BBF2395377D00F95A6E /* ParticipationViewController.swift */; };
+		194F1BC22395391900F95A6E /* ParticipationViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 194F1BC12395391900F95A6E /* ParticipationViewModel.swift */; };
 		19A965FE2387831A00AAC7D3 /* Visitor.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 19A965FD2387831A00AAC7D3 /* Visitor.storyboard */; };
 		19A96600238783D400AAC7D3 /* VisitorNameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19A965FF238783D400AAC7D3 /* VisitorNameViewController.swift */; };
 		19A96602238783DE00AAC7D3 /* VisitorStationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19A96601238783DE00AAC7D3 /* VisitorStationViewController.swift */; };
@@ -78,6 +82,10 @@
 		018076824BEEA4B63A86E4CCD41D22A0 /* libc++.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = "libc++.tbd"; path = "usr/lib/libc++.tbd"; sourceTree = SDKROOT; };
 		09B7859F3606BD9FD5AAA0F651FDE8D9 /* Result+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Result+.swift"; sourceTree = "<group>"; };
 		0B7507E6565EF13E7FFD154D16D1804B /* map_present_background_update.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = map_present_background_update.png; sourceTree = "<group>"; };
+		194F1BBB239533AA00F95A6E /* MapViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapViewController.swift; sourceTree = "<group>"; };
+		194F1BBD239533B000F95A6E /* MapViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapViewModel.swift; sourceTree = "<group>"; };
+		194F1BBF2395377D00F95A6E /* ParticipationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ParticipationViewController.swift; sourceTree = "<group>"; };
+		194F1BC12395391900F95A6E /* ParticipationViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ParticipationViewModel.swift; sourceTree = "<group>"; };
 		19A965FD2387831A00AAC7D3 /* Visitor.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Visitor.storyboard; sourceTree = "<group>"; };
 		19A965FF238783D400AAC7D3 /* VisitorNameViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VisitorNameViewController.swift; sourceTree = "<group>"; };
 		19A96601238783DE00AAC7D3 /* VisitorStationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VisitorStationViewController.swift; sourceTree = "<group>"; };
@@ -225,6 +233,10 @@
 			isa = PBXGroup;
 			children = (
 				19F2B11D238FB98A003ED01C /* Map.storyboard */,
+				194F1BBB239533AA00F95A6E /* MapViewController.swift */,
+				194F1BBD239533B000F95A6E /* MapViewModel.swift */,
+				194F1BBF2395377D00F95A6E /* ParticipationViewController.swift */,
+				194F1BC12395391900F95A6E /* ParticipationViewModel.swift */,
 			);
 			path = Map;
 			sourceTree = "<group>";
@@ -567,15 +579,19 @@
 			files = (
 				FD0C7AF2C852E38B8290348B3F19127E /* AppDelegate.swift in Sources */,
 				19A966062387843200AAC7D3 /* NSObject+.swift in Sources */,
+				194F1BC02395377D00F95A6E /* ParticipationViewController.swift in Sources */,
 				19F2B125238FC14C003ED01C /* VisitorNameViewModel.swift in Sources */,
 				C4C3A59991BD5520DA7A8320E2CCD539 /* KakaoMapView.swift in Sources */,
 				1087A72C42C029C0D02EB65BFDED13FA /* KakaoPlaceCategory.swift in Sources */,
 				792D417A35A2AA2A08CF898A8B618FF2 /* KakaoSearchByCategoryResponse.swift in Sources */,
 				19F2B12A238FC3E8003ED01C /* Assets.swift in Sources */,
+				194F1BBC239533AA00F95A6E /* MapViewController.swift in Sources */,
 				19F2B123238FBEB1003ED01C /* GigiViewController.swift in Sources */,
 				80F7E4E400032F853EBA11CD77578008 /* LocationService.swift in Sources */,
 				19A96600238783D400AAC7D3 /* VisitorNameViewController.swift in Sources */,
+				194F1BBE239533B000F95A6E /* MapViewModel.swift in Sources */,
 				19A96604238783FB00AAC7D3 /* VisitorFinishViewController.swift in Sources */,
+				194F1BC22395391900F95A6E /* ParticipationViewModel.swift in Sources */,
 				19F2B120238FBA2F003ED01C /* VisitorMainViewModel.swift in Sources */,
 				19A96602238783DE00AAC7D3 /* VisitorStationViewController.swift in Sources */,
 				19A96608238784B000AAC7D3 /* VisitorMainViewController.swift in Sources */,
