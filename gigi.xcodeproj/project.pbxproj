@@ -14,6 +14,7 @@
 		1087A72C42C029C0D02EB65BFDED13FA /* KakaoPlaceCategory.swift in Sources */ = {isa = PBXBuildFile; fileRef = F34FABB5318195E55BA90A89B90F39B1 /* KakaoPlaceCategory.swift */; };
 		14C621B00B4B3E10A868DFDD0DC99A29 /* NSObject+.swift in Sources */ = {isa = PBXBuildFile; fileRef = F15D4013EACC39F6D6F09B585B986A9F /* NSObject+.swift */; };
 		194CB58C2580B4ED21B304786D1C5B28 /* Result+.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09B7859F3606BD9FD5AAA0F651FDE8D9 /* Result+.swift */; };
+		194F1BA22394EDAA00F95A6E /* UIAlertController+.swift in Sources */ = {isa = PBXBuildFile; fileRef = 194F1BA12394EDAA00F95A6E /* UIAlertController+.swift */; };
 		1A1B117A1279C977D8EA19B974C75588 /* map_pinup_custom@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 8D3906B3F12F10536A0C761A18BF183A /* map_pinup_custom@3x.png */; };
 		247D7F9256439B497EDFAAE5D2EB40B5 /* map_present.png in Resources */ = {isa = PBXBuildFile; fileRef = C69E3607C1910A0334639B95EBCEA2A8 /* map_present.png */; };
 		2BBD0995BC3B763C714EE57E2E43FDF9 /* VisitorFinishViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DAF911BE6BDC995312373866A8336A9 /* VisitorFinishViewController.swift */; };
@@ -85,6 +86,7 @@
 		0DAF911BE6BDC995312373866A8336A9 /* VisitorFinishViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VisitorFinishViewController.swift; sourceTree = "<group>"; };
 		11C7F418BE93B9E27F3A07BF04B894A3 /* Host.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Host.storyboard; sourceTree = "<group>"; };
 		1231BE938942C24B4F40D401240EC4B2 /* VisitorFinishViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VisitorFinishViewModel.swift; sourceTree = "<group>"; };
+		194F1BA12394EDAA00F95A6E /* UIAlertController+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIAlertController+.swift"; sourceTree = "<group>"; };
 		1BE116408B4BFC0AF39A926E553E2DB8 /* MTMapGeometry.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MTMapGeometry.h; sourceTree = "<group>"; };
 		1FE71C718E9115188E664832FFE4FF97 /* daum_copyright.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = daum_copyright.png; sourceTree = "<group>"; };
 		2113AA84E4694A88AD2A5B3B15846D61 /* th_line.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = th_line.png; sourceTree = "<group>"; };
@@ -206,46 +208,6 @@
 			path = gigi;
 			sourceTree = "<group>";
 		};
-		8BD6954277C1BE2530328CD86EDDEDDA /* Visitor */ = {
-			isa = PBXGroup;
-			children = (
-				D228A35D0652854806849A9A1460B7A9 /* Visitor.storyboard */,
-				0DAF911BE6BDC995312373866A8336A9 /* VisitorFinishViewController.swift */,
-				1231BE938942C24B4F40D401240EC4B2 /* VisitorFinishViewModel.swift */,
-				9FA023094E95CD40FFA501D9E2FF1A76 /* VisitorMainViewController.swift */,
-				F8029A9155CDEA23D308152C76318D89 /* VisitorMainViewModel.swift */,
-				B54A1F4B1A2A356901AB105B0134371F /* VisitorNameViewController.swift */,
-				C883BBAA6B8B3779A81B36CA92CC8A39 /* VisitorNameViewModel.swift */,
-				D9AAB11F56AF20730F91CE43B022C2BD /* VisitorStationViewController.swift */,
-				A7F10D78D21C1FD2CEAB96667EC16500 /* VisitorStationViewModel.swift */,
-			);
-			path = Visitor;
-			sourceTree = "<group>";
-		};
-		31DA8FA17C25C950E1F4BA70DC700C92 /* Host */ = {
-			isa = PBXGroup;
-			children = (
-				11C7F418BE93B9E27F3A07BF04B894A3 /* Host.storyboard */,
-			);
-			path = Host;
-			sourceTree = "<group>";
-		};
-		B6D87BEF9198772CD547E9F20BA72C12 /* Map */ = {
-			isa = PBXGroup;
-			children = (
-				D2E4B538966B62A11DC0BEA7A24AC3D4 /* Map.storyboard */,
-			);
-			path = Map;
-			sourceTree = "<group>";
-		};
-		FBEE0A7010FF9766887DBF6F70F2BD75 /* Base */ = {
-			isa = PBXGroup;
-			children = (
-				B8BF195ED1229FB2F6431A155D41684D /* GigiViewController.swift */,
-			);
-			path = Base;
-			sourceTree = "<group>";
-		};
 		1D878D87F85512A94F3E38785C338019 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
@@ -254,6 +216,14 @@
 				BE1C0F2038069791307BCFC1EDB4A70B /* Storyboard.swift */,
 			);
 			path = Resources;
+			sourceTree = "<group>";
+		};
+		31DA8FA17C25C950E1F4BA70DC700C92 /* Host */ = {
+			isa = PBXGroup;
+			children = (
+				11C7F418BE93B9E27F3A07BF04B894A3 /* Host.storyboard */,
+			);
+			path = Host;
 			sourceTree = "<group>";
 		};
 		33FA880B728F1532F308F78B7F288136 /* Sources */ = {
@@ -323,6 +293,22 @@
 			);
 			sourceTree = "<group>";
 		};
+		8BD6954277C1BE2530328CD86EDDEDDA /* Visitor */ = {
+			isa = PBXGroup;
+			children = (
+				D228A35D0652854806849A9A1460B7A9 /* Visitor.storyboard */,
+				9FA023094E95CD40FFA501D9E2FF1A76 /* VisitorMainViewController.swift */,
+				F8029A9155CDEA23D308152C76318D89 /* VisitorMainViewModel.swift */,
+				B54A1F4B1A2A356901AB105B0134371F /* VisitorNameViewController.swift */,
+				C883BBAA6B8B3779A81B36CA92CC8A39 /* VisitorNameViewModel.swift */,
+				D9AAB11F56AF20730F91CE43B022C2BD /* VisitorStationViewController.swift */,
+				A7F10D78D21C1FD2CEAB96667EC16500 /* VisitorStationViewModel.swift */,
+				0DAF911BE6BDC995312373866A8336A9 /* VisitorFinishViewController.swift */,
+				1231BE938942C24B4F40D401240EC4B2 /* VisitorFinishViewModel.swift */,
+			);
+			path = Visitor;
+			sourceTree = "<group>";
+		};
 		96045367948C0257452147BE53D4F3FE /* Service */ = {
 			isa = PBXGroup;
 			children = (
@@ -367,6 +353,14 @@
 			path = Resources;
 			sourceTree = "<group>";
 		};
+		B6D87BEF9198772CD547E9F20BA72C12 /* Map */ = {
+			isa = PBXGroup;
+			children = (
+				D2E4B538966B62A11DC0BEA7A24AC3D4 /* Map.storyboard */,
+			);
+			path = Map;
+			sourceTree = "<group>";
+		};
 		CFFB3A1737D8193214AF6D5281E1D279 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
@@ -391,6 +385,7 @@
 				09B7859F3606BD9FD5AAA0F651FDE8D9 /* Result+.swift */,
 				6F1A9C864F674D26D65F022574D1A1ED /* UIColor+.swift */,
 				2857A5A5D5F75009435A985B01305C88 /* UIView+.swift */,
+				194F1BA12394EDAA00F95A6E /* UIAlertController+.swift */,
 			);
 			path = Extension;
 			sourceTree = "<group>";
@@ -422,6 +417,14 @@
 				59DA7519372C99BADADADB9B0FDBF67F /* libxml2.tbd */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		FBEE0A7010FF9766887DBF6F70F2BD75 /* Base */ = {
+			isa = PBXGroup;
+			children = (
+				B8BF195ED1229FB2F6431A155D41684D /* GigiViewController.swift */,
+			);
+			path = Base;
 			sourceTree = "<group>";
 		};
 		FE9C2F11E8388C3C5E34DDE826931ACA /* Products */ = {
@@ -581,6 +584,7 @@
 				6FC6348C04081480C0AFB5F270B497E7 /* Assets.swift in Sources */,
 				41C18D1BCFD1E42D88D43459D47398FA /* GigiTextField.swift in Sources */,
 				2F6C48F7DA669D4B655440B0933E5809 /* GigiViewController.swift in Sources */,
+				194F1BA22394EDAA00F95A6E /* UIAlertController+.swift in Sources */,
 				C4C3A59991BD5520DA7A8320E2CCD539 /* KakaoMapView.swift in Sources */,
 				1087A72C42C029C0D02EB65BFDED13FA /* KakaoPlaceCategory.swift in Sources */,
 				792D417A35A2AA2A08CF898A8B618FF2 /* KakaoSearchByCategoryResponse.swift in Sources */,

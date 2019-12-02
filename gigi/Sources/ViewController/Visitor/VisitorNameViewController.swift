@@ -13,6 +13,7 @@ import RxSwift
 
 final class VisitorNameViewController: GigiViewController {
   @IBOutlet private var nameTextField: GigiTextField!
+  @IBOutlet private var progressView: UIProgressView!
   private var nextButton = UIBarButtonItem()
   private var tapGestureRecognizer = UITapGestureRecognizer()
 
@@ -62,13 +63,30 @@ final class VisitorNameViewController: GigiViewController {
       .disposed(by: disposeBag)
 
     viewModel.output.isNextButtonTapped
-      .map {
+      .subscribe(onNext: { [weak self] in
+        self?.viewModel.input.validateName()
+      })
+      .disposed(by: disposeBag)
+
+    viewModel.output.isNameValid
+      .filter { $0 }
+      .map { _ in
         StoryboardScene.Visitor.visitorStationViewController.instantiate().then {
           $0.viewModel = VisitorStationViewModel()
         }
       }
       .subscribe(onNext: { [weak self] in
         self?.navigationController?.pushViewController($0, animated: true)
+      })
+      .disposed(by: disposeBag)
+
+    viewModel.output.isNameValid
+      .filter { !$0 }
+      .subscribe(onNext: { [weak self] _ in
+        UIAlertController
+          .alert(title: "", message: "이름을 입력해 주세요.")
+          .action(title: "확인")
+          .present(to: self)
       })
       .disposed(by: disposeBag)
   }

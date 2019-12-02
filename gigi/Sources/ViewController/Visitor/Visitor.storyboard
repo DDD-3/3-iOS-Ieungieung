@@ -60,13 +60,19 @@
                                     <userDefinedRuntimeAttribute type="string" keyPath="placeholder" value="김여기닷"/>
                                 </userDefinedRuntimeAttributes>
                             </view>
+                            <progressView opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="750" progress="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="gdn-1G-hJv">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="2"/>
+                            </progressView>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <constraints>
+                            <constraint firstItem="gdn-1G-hJv" firstAttribute="leading" secondItem="RB4-g5-hke" secondAttribute="leading" id="0G6-2x-eEy"/>
                             <constraint firstItem="c46-Rt-VKC" firstAttribute="leading" secondItem="RB4-g5-hke" secondAttribute="leading" constant="30" id="4Jh-uT-1Jp"/>
                             <constraint firstAttribute="trailing" secondItem="c46-Rt-VKC" secondAttribute="trailing" constant="30" id="DWC-hy-S0F"/>
+                            <constraint firstItem="gdn-1G-hJv" firstAttribute="top" secondItem="I4b-TL-Sic" secondAttribute="top" constant="-44" id="JbR-jr-T4X"/>
                             <constraint firstItem="3aG-jN-Tub" firstAttribute="leading" secondItem="I4b-TL-Sic" secondAttribute="leading" constant="30" id="SDu-ec-iCQ"/>
                             <constraint firstItem="3aG-jN-Tub" firstAttribute="trailing" secondItem="I4b-TL-Sic" secondAttribute="trailing" constant="-30" id="UE2-A6-2PC"/>
+                            <constraint firstAttribute="trailing" secondItem="gdn-1G-hJv" secondAttribute="trailing" id="a5u-s0-Rqw"/>
                             <constraint firstItem="c46-Rt-VKC" firstAttribute="top" secondItem="I4b-TL-Sic" secondAttribute="top" constant="20" id="wXB-Cm-8Yu"/>
                             <constraint firstItem="3aG-jN-Tub" firstAttribute="top" secondItem="c46-Rt-VKC" secondAttribute="bottom" constant="24" id="wkS-75-34v"/>
                         </constraints>
@@ -74,6 +80,7 @@
                     </view>
                     <connections>
                         <outlet property="nameTextField" destination="3aG-jN-Tub" id="oZd-fj-iQc"/>
+                        <outlet property="progressView" destination="gdn-1G-hJv" id="lw1-s7-JqC"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="fKB-AJ-rpu" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -122,14 +129,20 @@
                                     <userDefinedRuntimeAttribute type="string" keyPath="placeholder" value="증산역"/>
                                 </userDefinedRuntimeAttributes>
                             </view>
+                            <progressView opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="750" progress="1" translatesAutoresizingMaskIntoConstraints="NO" id="vhm-Ra-1Pg">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="2"/>
+                            </progressView>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <constraints>
+                            <constraint firstAttribute="trailing" secondItem="vhm-Ra-1Pg" secondAttribute="trailing" id="25h-MH-b13"/>
+                            <constraint firstItem="vhm-Ra-1Pg" firstAttribute="top" secondItem="WTn-05-Ova" secondAttribute="top" constant="-44" id="95J-hE-Yav"/>
                             <constraint firstItem="WTn-05-Ova" firstAttribute="trailing" secondItem="ba0-Rz-0vE" secondAttribute="trailing" constant="30" id="CX5-p0-uNw"/>
                             <constraint firstItem="ba0-Rz-0vE" firstAttribute="leading" secondItem="WTn-05-Ova" secondAttribute="leading" constant="30" id="NQC-8W-7hi"/>
                             <constraint firstItem="WTn-05-Ova" firstAttribute="trailing" secondItem="Yjn-Ic-3RM" secondAttribute="trailing" constant="30" id="P5q-a3-W2H"/>
                             <constraint firstItem="jff-tD-2hA" firstAttribute="leading" secondItem="WTn-05-Ova" secondAttribute="leading" constant="30" id="Sfb-cC-uQ8"/>
                             <constraint firstItem="Yjn-Ic-3RM" firstAttribute="top" secondItem="jff-tD-2hA" secondAttribute="bottom" constant="24" id="TG2-sX-6N2"/>
+                            <constraint firstItem="vhm-Ra-1Pg" firstAttribute="leading" secondItem="iAf-nt-FDv" secondAttribute="leading" id="cok-aL-M7g"/>
                             <constraint firstItem="jff-tD-2hA" firstAttribute="top" secondItem="WTn-05-Ova" secondAttribute="top" constant="20" id="k5N-up-iGq"/>
                             <constraint firstItem="ba0-Rz-0vE" firstAttribute="top" secondItem="Yjn-Ic-3RM" secondAttribute="bottom" constant="12" id="rTc-x9-LAO"/>
                             <constraint firstItem="WTn-05-Ova" firstAttribute="trailing" secondItem="jff-tD-2hA" secondAttribute="trailing" constant="30" id="swk-jb-qCL"/>
@@ -140,6 +153,7 @@
                     <connections>
                         <outlet property="backStationNameTextField" destination="ba0-Rz-0vE" id="l1M-If-q7u"/>
                         <outlet property="nearStationNameTextField" destination="Yjn-Ic-3RM" id="Aaj-Y5-mSG"/>
+                        <outlet property="progressView" destination="vhm-Ra-1Pg" id="6VZ-Ru-A7Z"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="PWa-Jt-j0s" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>

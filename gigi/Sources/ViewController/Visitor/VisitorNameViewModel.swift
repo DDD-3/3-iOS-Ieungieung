@@ -22,6 +22,8 @@ protocol VisitorNameViewModelInputProtocol {
 
   func finishNameInput()
 
+  func validateName()
+
   func pushNextViewController()
 }
 
@@ -29,6 +31,8 @@ protocol VisitorNameViewModelOutputProtocol {
   var isNameInputFinished: Observable<Void> { get }
 
   var isNextButtonTapped: Observable<Void> { get }
+
+  var isNameValid: Observable<Bool> { get }
 }
 
 // MARK: - 구현
@@ -37,6 +41,8 @@ final class VisitorNameViewModel {
   private let nameRelay = BehaviorRelay<String?>(value: nil)
 
   private let isNameInputFinishedRelay = BehaviorRelay<Void?>(value: nil)
+
+  private let isNameValidRelay = BehaviorRelay<Bool?>(value: nil)
 
   private let isNextButtonTappedRelay = BehaviorRelay<Void?>(value: nil)
 }
@@ -56,6 +62,14 @@ extension VisitorNameViewModel: VisitorNameViewModelInputProtocol {
     isNameInputFinishedRelay.accept(Void())
   }
 
+  func validateName() {
+    if let name = nameRelay.value, !name.isEmpty {
+      isNameValidRelay.accept(true)
+    } else {
+      isNameValidRelay.accept(false)
+    }
+  }
+
   func pushNextViewController() {
     isNextButtonTappedRelay.accept(Void())
   }
@@ -68,5 +82,9 @@ extension VisitorNameViewModel: VisitorNameViewModelOutputProtocol {
 
   var isNextButtonTapped: Observable<Void> {
     return isNextButtonTappedRelay.compactMap { $0 }
+  }
+
+  var isNameValid: Observable<Bool> {
+    return isNameValidRelay.compactMap { $0 }
   }
 }

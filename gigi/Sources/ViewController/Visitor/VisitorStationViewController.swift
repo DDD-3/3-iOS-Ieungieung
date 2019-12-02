@@ -12,6 +12,7 @@ import RxCocoa
 import RxSwift
 
 final class VisitorStationViewController: GigiViewController {
+  @IBOutlet private var progressView: UIProgressView!
   @IBOutlet private var nearStationNameTextField: GigiTextField!
   @IBOutlet private var backStationNameTextField: GigiTextField!
   private var nextButton = UIBarButtonItem()
