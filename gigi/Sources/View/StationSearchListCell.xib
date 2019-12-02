@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="15505" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15510"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="StationSearchListCell" rowHeight="62" id="ujj-WK-L8b" customClass="StationSearchListCell" customModule="gigi" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="62"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="ujj-WK-L8b" id="NU8-RI-YIe">
+                <rect key="frame" x="0.0" y="0.0" width="414" height="62"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="{ station_name }" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bhd-Lx-ca5">
+                        <rect key="frame" x="16" y="17.5" width="152" height="27"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="22"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <stackView opaque="NO" contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="4nq-9d-cNJ">
+                        <rect key="frame" x="250" y="17.5" width="136" height="27"/>
+                    </stackView>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="bhd-Lx-ca5" firstAttribute="centerY" secondItem="NU8-RI-YIe" secondAttribute="centerY" id="0eb-xL-0TD"/>
+                    <constraint firstAttribute="trailing" secondItem="4nq-9d-cNJ" secondAttribute="trailing" constant="16" id="I2Q-Yp-tzW"/>
+                    <constraint firstItem="bhd-Lx-ca5" firstAttribute="leading" secondItem="NU8-RI-YIe" secondAttribute="leading" constant="16" id="cJI-Xw-kkR"/>
+                    <constraint firstItem="4nq-9d-cNJ" firstAttribute="top" secondItem="bhd-Lx-ca5" secondAttribute="top" id="lru-cY-GYC"/>
+                    <constraint firstItem="4nq-9d-cNJ" firstAttribute="bottom" secondItem="bhd-Lx-ca5" secondAttribute="bottom" id="vcb-b3-B1B"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="stationNameLabel" destination="bhd-Lx-ca5" id="lUK-aV-66v"/>
+                <outlet property="stationsLineImageStackView" destination="4nq-9d-cNJ" id="aaH-Ee-2Ie"/>
+            </connections>
+            <point key="canvasLocation" x="53.623188405797109" y="62.946428571428569"/>
+        </tableViewCell>
+    </objects>
+</document>

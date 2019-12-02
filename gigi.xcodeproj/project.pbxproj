@@ -13,6 +13,15 @@
 		08A60E96203450FDCA65CFA81A280D40 /* map_pinup_custom.png in Resources */ = {isa = PBXBuildFile; fileRef = 0014A685BEFE438A55E67987AADFED49 /* map_pinup_custom.png */; };
 		1087A72C42C029C0D02EB65BFDED13FA /* KakaoPlaceCategory.swift in Sources */ = {isa = PBXBuildFile; fileRef = F34FABB5318195E55BA90A89B90F39B1 /* KakaoPlaceCategory.swift */; };
 		194CB58C2580B4ED21B304786D1C5B28 /* Result+.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09B7859F3606BD9FD5AAA0F651FDE8D9 /* Result+.swift */; };
+		194F1BA5239528D000F95A6E /* StationSearchBySubwayResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 194F1BA4239528D000F95A6E /* StationSearchBySubwayResponse.swift */; };
+		194F1BA723952A4600F95A6E /* StationSearchListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 194F1BA623952A4600F95A6E /* StationSearchListView.swift */; };
+		194F1BA923952A4E00F95A6E /* StationSearchListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 194F1BA823952A4E00F95A6E /* StationSearchListViewModel.swift */; };
+		194F1BAB23952AF100F95A6E /* StationSearchListView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 194F1BAA23952AF100F95A6E /* StationSearchListView.xib */; };
+		194F1BAD23952B3A00F95A6E /* StationSearchListCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 194F1BAC23952B3A00F95A6E /* StationSearchListCell.swift */; };
+		194F1BAF23952DFD00F95A6E /* StationSearchListCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 194F1BAE23952DFD00F95A6E /* StationSearchListCell.xib */; };
+		194F1BB123952E9300F95A6E /* GigiView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 194F1BB023952E9300F95A6E /* GigiView.swift */; };
+		194F1BB523952F2000F95A6E /* GigiCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 194F1BB423952F2000F95A6E /* GigiCollectionViewCell.swift */; };
+		194F1BB723952F2B00F95A6E /* GigiTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 194F1BB623952F2B00F95A6E /* GigiTableViewCell.swift */; };
 		19A965FE2387831A00AAC7D3 /* Visitor.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 19A965FD2387831A00AAC7D3 /* Visitor.storyboard */; };
 		19A96600238783D400AAC7D3 /* VisitorNameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19A965FF238783D400AAC7D3 /* VisitorNameViewController.swift */; };
 		19A96602238783DE00AAC7D3 /* VisitorStationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19A96601238783DE00AAC7D3 /* VisitorStationViewController.swift */; };
@@ -78,6 +87,15 @@
 		018076824BEEA4B63A86E4CCD41D22A0 /* libc++.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = "libc++.tbd"; path = "usr/lib/libc++.tbd"; sourceTree = SDKROOT; };
 		09B7859F3606BD9FD5AAA0F651FDE8D9 /* Result+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Result+.swift"; sourceTree = "<group>"; };
 		0B7507E6565EF13E7FFD154D16D1804B /* map_present_background_update.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = map_present_background_update.png; sourceTree = "<group>"; };
+		194F1BA4239528D000F95A6E /* StationSearchBySubwayResponse.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StationSearchBySubwayResponse.swift; sourceTree = "<group>"; };
+		194F1BA623952A4600F95A6E /* StationSearchListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StationSearchListView.swift; sourceTree = "<group>"; };
+		194F1BA823952A4E00F95A6E /* StationSearchListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StationSearchListViewModel.swift; sourceTree = "<group>"; };
+		194F1BAA23952AF100F95A6E /* StationSearchListView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = StationSearchListView.xib; sourceTree = "<group>"; };
+		194F1BAC23952B3A00F95A6E /* StationSearchListCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StationSearchListCell.swift; sourceTree = "<group>"; };
+		194F1BAE23952DFD00F95A6E /* StationSearchListCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = StationSearchListCell.xib; sourceTree = "<group>"; };
+		194F1BB023952E9300F95A6E /* GigiView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GigiView.swift; sourceTree = "<group>"; };
+		194F1BB423952F2000F95A6E /* GigiCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GigiCollectionViewCell.swift; sourceTree = "<group>"; };
+		194F1BB623952F2B00F95A6E /* GigiTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GigiTableViewCell.swift; sourceTree = "<group>"; };
 		19A965FD2387831A00AAC7D3 /* Visitor.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Visitor.storyboard; sourceTree = "<group>"; };
 		19A965FF238783D400AAC7D3 /* VisitorNameViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VisitorNameViewController.swift; sourceTree = "<group>"; };
 		19A96601238783DE00AAC7D3 /* VisitorStationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VisitorStationViewController.swift; sourceTree = "<group>"; };
@@ -188,6 +206,24 @@
 			path = ViewController;
 			sourceTree = "<group>";
 		};
+		194F1BA3239528D000F95A6E /* SubwayAPI */ = {
+			isa = PBXGroup;
+			children = (
+				194F1BA4239528D000F95A6E /* StationSearchBySubwayResponse.swift */,
+			);
+			path = SubwayAPI;
+			sourceTree = "<group>";
+		};
+		194F1BB823952F5300F95A6E /* Base */ = {
+			isa = PBXGroup;
+			children = (
+				194F1BB023952E9300F95A6E /* GigiView.swift */,
+				194F1BB423952F2000F95A6E /* GigiCollectionViewCell.swift */,
+				194F1BB623952F2B00F95A6E /* GigiTableViewCell.swift */,
+			);
+			path = Base;
+			sourceTree = "<group>";
+		};
 		19591A7D5F45824A05320174EED9BF4B /* gigi */ = {
 			isa = PBXGroup;
 			children = (
@@ -250,6 +286,7 @@
 		33FA880B728F1532F308F78B7F288136 /* Sources */ = {
 			isa = PBXGroup;
 			children = (
+				194F1BA3239528D000F95A6E /* SubwayAPI */,
 				E94BDBB3F3E8733A6F37DBFE26C51FB5 /* Common */,
 				EA55D37305884ABBAC02281AD40E1C19 /* Extension */,
 				370AE5E3BCAACB5ACBE75BB5E479A4AA /* KakaoAPI */,
@@ -282,7 +319,13 @@
 		5042FA42DD4D0E79A7C45D67C4AF71FE /* View */ = {
 			isa = PBXGroup;
 			children = (
+				194F1BB823952F5300F95A6E /* Base */,
 				ED5473A48E3418F08F464DC2DB2ABB73 /* KakaoMapView.swift */,
+				194F1BA623952A4600F95A6E /* StationSearchListView.swift */,
+				194F1BA823952A4E00F95A6E /* StationSearchListViewModel.swift */,
+				194F1BAA23952AF100F95A6E /* StationSearchListView.xib */,
+				194F1BAC23952B3A00F95A6E /* StationSearchListCell.swift */,
+				194F1BAE23952DFD00F95A6E /* StationSearchListCell.xib */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -490,9 +533,11 @@
 				E43C60EF2361ED16E0BDC8974E5A80D0 /* detail_button.png in Resources */,
 				19F2B127238FC397003ED01C /* swiftgen.yml in Resources */,
 				8714F5E80EB1F930470FFF2BCF0BF4BF /* info_box.png in Resources */,
+				194F1BAF23952DFD00F95A6E /* StationSearchListCell.xib in Resources */,
 				B211FB64483899C2748295915A8C4040 /* info_box_tail.png in Resources */,
 				A75B222F9371511CEEC34A94169DBAA5 /* map_pin.png in Resources */,
 				3017B90A3E8A786129DB491C7E881781 /* map_pin@3x.png in Resources */,
+				194F1BAB23952AF100F95A6E /* StationSearchListView.xib in Resources */,
 				46B852634DB1FF0F621E430086B863B0 /* map_pin_custom.png in Resources */,
 				7B4A2B4307BC8A2AB3FF5BEE63A09827 /* map_pin_custom@3x.png in Resources */,
 				71D8692E3168608E42D412B33DE2B91A /* map_pin_red.png in Resources */,
@@ -569,11 +614,17 @@
 				19A966062387843200AAC7D3 /* NSObject+.swift in Sources */,
 				19F2B125238FC14C003ED01C /* VisitorNameViewModel.swift in Sources */,
 				C4C3A59991BD5520DA7A8320E2CCD539 /* KakaoMapView.swift in Sources */,
+				194F1BAD23952B3A00F95A6E /* StationSearchListCell.swift in Sources */,
+				194F1BB723952F2B00F95A6E /* GigiTableViewCell.swift in Sources */,
 				1087A72C42C029C0D02EB65BFDED13FA /* KakaoPlaceCategory.swift in Sources */,
+				194F1BB523952F2000F95A6E /* GigiCollectionViewCell.swift in Sources */,
+				194F1BA723952A4600F95A6E /* StationSearchListView.swift in Sources */,
+				194F1BA923952A4E00F95A6E /* StationSearchListViewModel.swift in Sources */,
 				792D417A35A2AA2A08CF898A8B618FF2 /* KakaoSearchByCategoryResponse.swift in Sources */,
 				19F2B12A238FC3E8003ED01C /* Assets.swift in Sources */,
 				19F2B123238FBEB1003ED01C /* GigiViewController.swift in Sources */,
 				80F7E4E400032F853EBA11CD77578008 /* LocationService.swift in Sources */,
+				194F1BA5239528D000F95A6E /* StationSearchBySubwayResponse.swift in Sources */,
 				19A96600238783D400AAC7D3 /* VisitorNameViewController.swift in Sources */,
 				19A96604238783FB00AAC7D3 /* VisitorFinishViewController.swift in Sources */,
 				19F2B120238FBA2F003ED01C /* VisitorMainViewModel.swift in Sources */,
@@ -582,6 +633,7 @@
 				3383D9439DFBAA2AA03973A16189A94E /* Log.swift in Sources */,
 				194CB58C2580B4ED21B304786D1C5B28 /* Result+.swift in Sources */,
 				19F2B12D238FC8A3003ED01C /* VisitorStationViewModel.swift in Sources */,
+				194F1BB123952E9300F95A6E /* GigiView.swift in Sources */,
 				19F2B12B238FC3E8003ED01C /* Storyboard.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
