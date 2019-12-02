@@ -18,12 +18,16 @@ internal enum StoryboardScene {
 
   internal enum LaunchScreen: StoryboardType {
     internal static let storyboardName = "LaunchScreen"
-
-    internal static let initialScene = InitialSceneType<UIKit.UIViewController>(storyboard: LaunchScreen.self)
   }
 
   internal enum Map: StoryboardType {
     internal static let storyboardName = "Map"
+
+    internal static let initialScene = InitialSceneType<MapViewController>(storyboard: Map.self)
+
+    internal static let mapViewController = SceneType<MapViewController>(storyboard: Map.self, identifier: "MapViewController")
+
+    internal static let participationViewController = SceneType<ParticipationViewController>(storyboard: Map.self, identifier: "ParticipationViewController")
   }
 
   internal enum Visitor: StoryboardType {
